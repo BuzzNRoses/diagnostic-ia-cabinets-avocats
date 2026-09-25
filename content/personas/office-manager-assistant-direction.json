@@ -1,0 +1,147 @@
+{
+  "slug": "office-manager-assistant-direction",
+  "name": "Office manager ou assistant de direction",
+  "seo_title": "IA pour office manager et assistant de direction en cabinet",
+  "meta_description": "Cas d’usage encadrés de l’IA pour organiser un cabinet d’avocats : réunions, procédures, prestataires, tableaux de bord et communication interne.",
+  "intro": "L’office manager ou l’assistant de direction coordonne une partie du fonctionnement quotidien du cabinet : agendas, réunions, prestataires, locaux, achats, intégration des collaborateurs, suivi administratif et circulation de l’information. Dans les structures de taille réduite, son périmètre peut aussi toucher aux ressources humaines, au budget, à la qualité ou à la conduite de projets internes.\n\nL’IA peut soutenir la préparation de documents et la structuration d’informations déjà disponibles. Elle ne doit pas arbitrer seule entre des personnes, engager une dépense, sélectionner un candidat ou décider d’une mesure de gestion. Les responsabilités de la direction et les contrôles des fonctions concernées restent inchangés.",
+  "responsibilities": [
+    "Coordonner les agendas, réunions, déplacements et priorités opérationnelles.",
+    "Organiser les relations avec les fournisseurs et suivre les prestations.",
+    "Préparer des tableaux de bord et documents d’aide au pilotage.",
+    "Formaliser et actualiser les procédures internes.",
+    "Contribuer à l’accueil, à l’intégration et à la gestion administrative des équipes.",
+    "Assurer la circulation des informations entre la direction et les collaborateurs.",
+    "Participer aux projets d’organisation et à l’accompagnement du changement."
+  ],
+  "frictions": [
+    "Rassembler des informations dispersées entre courriels, tableaux et outils métiers.",
+    "Préparer des réunions à partir de contributions reçues dans des formats différents.",
+    "Suivre de nombreuses actions sans devenir le point de blocage de toutes les équipes.",
+    "Maintenir les procédures à jour lorsque l’organisation ou les outils évoluent.",
+    "Comparer des offres de prestataires sans perdre les différences de périmètre.",
+    "Produire des tableaux de bord sans ressaisies répétitives ni indicateurs trompeurs.",
+    "Communiquer une décision de direction de manière claire sans en modifier la portée."
+  ],
+  "assist": [
+    {
+      "title": "Préparer une réunion de direction",
+      "body": "Structurer les contributions en ordre du jour, décisions attendues, documents à lire et questions restant ouvertes."
+    },
+    {
+      "title": "Rédiger un premier projet de procédure",
+      "body": "Transformer des étapes décrites par les responsables en un mode opératoire à faire relire par les métiers, le DPO, l’informatique ou la direction selon le sujet."
+    },
+    {
+      "title": "Comparer des propositions commerciales",
+      "body": "Présenter dans une grille commune les prix, périmètres, exclusions, durées, niveaux de service et clauses à vérifier, sans choisir le fournisseur."
+    },
+    {
+      "title": "Préparer une communication interne",
+      "body": "Décliner une décision déjà validée en message court, questions-réponses et rappel des contacts utiles."
+    },
+    {
+      "title": "Analyser un questionnaire interne",
+      "body": "Regrouper les réponses, faire ressortir les thèmes récurrents et signaler les formulations isolées, sans inférer l’état d’esprit d’une personne."
+    }
+  ],
+  "automate_with_controls": [
+    {
+      "title": "Synthèse de réunions internes",
+      "body": "Produire un projet de compte rendu à partir de notes ou d’une transcription autorisée.",
+      "control": "Informer les participants, limiter l’accès, fixer une durée de conservation et faire approuver les décisions par le responsable de réunion."
+    },
+    {
+      "title": "Consolidation d’indicateurs",
+      "body": "Assembler des données non contentieuses issues de tableaux validés pour préparer un reporting périodique.",
+      "control": "Documenter la source et la date de chaque indicateur ; interdire toute modification de la donnée d’origine et vérifier les totaux."
+    },
+    {
+      "title": "Rappels de tâches administratives",
+      "body": "Créer des tâches à partir d’une procédure stable, comme la préparation d’une réunion ou le renouvellement d’un abonnement.",
+      "control": "Exclure les délais juridiques et les décisions RH ; chaque tâche possède un responsable et une possibilité d’annulation."
+    },
+    {
+      "title": "Classement des demandes internes",
+      "body": "Proposer une catégorie et un destinataire pour les demandes de fournitures, locaux, informatique ou organisation.",
+      "control": "Les demandes ambiguës ou sensibles sont transmises à une personne ; aucun achat ni ticket critique n’est clos automatiquement."
+    }
+  ],
+  "do_not_automate": [
+    "La sélection, le rejet ou l’évaluation autonome d’un candidat ou d’un salarié.",
+    "Une décision disciplinaire, salariale ou relative aux conditions de travail.",
+    "L’engagement d’une dépense, la validation d’une facture ou la signature d’un contrat.",
+    "L’arbitrage autonome de priorités entre dossiers ou équipes.",
+    "L’envoi d’une communication de crise ou d’une décision de direction.",
+    "La surveillance individuelle de l’activité des collaborateurs."
+  ],
+  "data_and_risks": [
+    {
+      "title": "Données RH et financières",
+      "body": "Les dossiers du personnel, rémunérations, évaluations, coordonnées bancaires et factures exigent des accès stricts. Ils ne doivent pas servir de données de test ordinaires."
+    },
+    {
+      "title": "Biais dans les décisions humaines",
+      "body": "Une synthèse automatisée peut privilégier les critères faciles à quantifier ou reproduire un biais présent dans les données. Elle ne doit pas devenir un classement de personnes."
+    },
+    {
+      "title": "Indicateurs sans contexte",
+      "body": "Un tableau exact peut néanmoins être mal interprété si le périmètre ou la période changent. Les définitions, sources et réserves doivent accompagner le reporting."
+    },
+    {
+      "title": "Extension silencieuse du périmètre",
+      "body": "Un outil testé pour les réunions peut progressivement recevoir des informations clients ou RH. Les usages autorisés et interdits doivent être revus régulièrement."
+    }
+  ],
+  "pilot": {
+    "title": "Compte rendu contrôlé de réunion opérationnelle",
+    "situation": "Les réunions internes non contentieuses génèrent des notes hétérogènes et des actions parfois mal reformulées.",
+    "scope": "Tester sur un type de réunion récurrent, sans dossier client ni sujet individuel RH, la préparation d’un projet de compte rendu et d’une liste d’actions.",
+    "measure": "Comparer le délai de diffusion, le nombre de corrections, les actions mal attribuées, les oublis et l’avis des participants sur la fidélité du document.",
+    "stop": "Arrêter si les participants refusent le dispositif, si des données non prévues sont captées, si les décisions sont déformées ou si la relecture annule l’intérêt du test."
+  },
+  "existing_tools_first": [
+    "Les modèles d’ordre du jour, procès-verbal et relevé de décisions.",
+    "Les agendas partagés, tâches et rappels de la suite bureautique.",
+    "Les tableaux croisés, formules et contrôles du tableur.",
+    "Le logiciel de gestion des achats, fournisseurs ou notes de frais.",
+    "L’intranet, le manuel de procédures et la base de questions-réponses.",
+    "Les circuits de validation déjà définis par la direction."
+  ],
+  "diagnostic_questions": [
+    "Quelle information est aujourd’hui ressaisie et dans quels outils ?",
+    "La tâche relève-t-elle d’une préparation administrative ou d’une décision de direction ?",
+    "Quelles données clients, RH ou financières doivent être exclues ?",
+    "Qui est propriétaire du processus et valide les résultats ?",
+    "Les fonctions existantes de la suite bureautique suffisent-elles ?",
+    "Quels indicateurs permettront de constater les erreurs et les reprises ?",
+    "Le dispositif reste-t-il utile si chaque résultat doit être relu intégralement ?"
+  ],
+  "related_personas": [
+    "secretaire-assistant-juridique",
+    "dpo-conformite",
+    "documentaliste-knowledge-manager"
+  ],
+  "sources": [
+    {
+      "title": "France compétences — Certification Office manager",
+      "url": "https://www.francecompetences.fr/recherche/rncp/41686",
+      "kind": "role"
+    },
+    {
+      "title": "France compétences — Activités de l’Office manager",
+      "url": "https://www.francecompetences.fr/recherche/rncp/41308",
+      "kind": "role"
+    },
+    {
+      "title": "France compétences — Assistant de direction",
+      "url": "https://www.francecompetences.fr/recherche/rncp/34143",
+      "kind": "role"
+    },
+    {
+      "title": "CNIL — Comment déployer une IA générative ?",
+      "url": "https://www.cnil.fr/fr/comment-deployer-une-ia-generative-la-cnil-apporte-de-premieres-precisions",
+      "kind": "framework"
+    }
+  ],
+  "role_boundary": "L’office manager coordonne et rend l’information exploitable. Il ne se substitue ni à la direction pour les arbitrages, ni au RAF pour les décisions financières, ni aux RH pour les décisions individuelles, ni au DPO ou à l’informatique pour leurs contrôles spécialisés."
+}

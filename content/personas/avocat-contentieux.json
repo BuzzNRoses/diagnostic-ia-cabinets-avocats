@@ -1,0 +1,161 @@
+{
+  "slug": "avocat-contentieux",
+  "name": "Avocat contentieux",
+  "seo_title": "IA et contentieux : préparer un dossier sans déléguer la défense",
+  "meta_description": "Usages encadrés de l’IA en contentieux pour chronologies, pièces et relecture, avec sources vérifiées et contrôle humain.",
+  "intro": "En contentieux, la valeur ne tient pas à la quantité de texte produite mais à la maîtrise des faits, des pièces, de la procédure et de la stratégie. L’IA peut être utile en amont pour ordonner un dossier, repérer des incohérences ou préparer une vue de travail, à condition que chaque élément retourne à sa pièce d’origine.\n\nElle ne doit ni inventer la jurisprudence, ni apprécier la crédibilité d’une personne, ni choisir une stratégie. Les délais, communications contradictoires, écritures et dépôts restent sous contrôle professionnel direct ; pour les dossiers sensibles, la sécurité de l’environnement et le cloisonnement des accès priment sur la commodité.",
+  "responsibilities": [
+    "Établir les faits pertinents et la chronologie du litige",
+    "Analyser les pièces, moyens adverses et règles de procédure",
+    "Définir une stratégie contentieuse avec le client",
+    "Rédiger et réviser assignations, conclusions, notes et courriers",
+    "Respecter les délais, formalités, communications et exigences du contradictoire",
+    "Préparer les audiences, auditions, expertises et négociations",
+    "Informer le client sur les options, incertitudes et étapes de la procédure"
+  ],
+  "frictions": [
+    "Volumes importants de pièces hétérogènes et parfois mal nommées",
+    "Chronologies dispersées entre courriels, contrats, factures et comptes rendus",
+    "Versions concurrentes des faits et besoin de rattacher chaque affirmation à une preuve",
+    "Délais procéduraux qui ne tolèrent ni omission ni alerte unique",
+    "Temps de comparaison entre écritures, pièces et arguments adverses",
+    "Risque de jurisprudence inventée, obsolète ou sortie de son contexte",
+    "Données souvent très sensibles, y compris celles de tiers"
+  ],
+  "assist": [
+    {
+      "title": "Construire une chronologie sourcée",
+      "body": "Extraire des dates et événements d’un corpus autorisé, avec un lien vers la pièce et la page. L’avocat confirme les événements, leur portée et les contradictions."
+    },
+    {
+      "title": "Préparer un bordereau de travail",
+      "body": "Suggérer un classement, détecter les doublons apparents et relever les métadonnées manquantes sans conclure à l’authenticité ni à la force probante."
+    },
+    {
+      "title": "Comparer les positions",
+      "body": "Mettre en regard les affirmations des parties, les pièces invoquées et les réponses déjà préparées, afin de faire ressortir les points non traités."
+    },
+    {
+      "title": "Tester la lisibilité d’un projet",
+      "body": "Repérer les ruptures de chronologie, termes ambigus, répétitions et renvois incomplets dans des écritures déjà conçues par l’avocat."
+    },
+    {
+      "title": "Préparer un contre-questionnement",
+      "body": "À partir de la théorie du dossier formulée par l’avocat, proposer des objections ou questions de clarification pour éprouver la cohérence, sans prédire l’issue du litige."
+    }
+  ],
+  "automate_with_controls": [
+    {
+      "title": "OCR et métadonnées des pièces",
+      "body": "Rendre les documents recherchables et proposer date, type, auteur apparent et numéro de pièce.",
+      "control": "Conserver l’original, vérifier la qualité de l’OCR et faire valider les métadonnées avant utilisation dans un acte."
+    },
+    {
+      "title": "Détection de doublons",
+      "body": "Signaler les fichiers identiques ou très proches dans un dossier volumineux.",
+      "control": "Aucune suppression automatique ; vérification des versions, annotations, signatures et métadonnées par un membre de l’équipe."
+    },
+    {
+      "title": "Tableau des arguments",
+      "body": "Alimenter un tableau à partir de documents sélectionnés : argument, source invoquée, réponse envisagée et statut.",
+      "control": "Chaque ligne renvoie à un extrait contrôlable ; l’avocat décide de la pertinence et de la réponse."
+    },
+    {
+      "title": "Rappels procéduraux internes",
+      "body": "Dupliquer dans une liste de travail les jalons saisis dans l’outil de référence.",
+      "control": "Double contrôle humain, source officielle ou décision identifiée, et maintien du calendrier métier comme système maître."
+    }
+  ],
+  "do_not_automate": [
+    "La détermination de la stratégie, des concessions ou de l’opportunité d’une procédure",
+    "L’appréciation de la crédibilité d’un client, témoin, expert ou adversaire",
+    "La recherche ou la citation de jurisprudence sans contrôle dans une source fiable et à jour",
+    "La sélection finale des pièces et l’appréciation de leur valeur probante",
+    "Le calcul autonome d’un délai procédural ou la suppression d’une échéance",
+    "Le dépôt, la signification, la communication de pièces ou l’envoi d’écritures"
+  ],
+  "data_and_risks": [
+    {
+      "title": "Secret et données de tiers",
+      "body": "Les dossiers contentieux mêlent données du client, de l’adversaire, de témoins et parfois des données sensibles. Le périmètre autorisé doit être défini avant tout chargement."
+    },
+    {
+      "title": "Injection indirecte",
+      "body": "Un document adverse ou externe peut contenir des instructions ou contenus destinés à détourner un système automatisé. Les pièces doivent rester des données à analyser, jamais des instructions à exécuter."
+    },
+    {
+      "title": "Traçabilité probatoire",
+      "body": "Une synthèse n’est pas une preuve. Chaque date, citation ou montant doit rester relié au document original, à sa page et, si nécessaire, à son contexte."
+    },
+    {
+      "title": "Biais de confirmation",
+      "body": "Un outil peut renforcer la théorie suggérée dans la requête. Prévoir une revue contradictoire et rechercher activement les éléments qui l’affaiblissent."
+    },
+    {
+      "title": "Intégrité des pièces",
+      "body": "Les conversions, OCR et annotations ne doivent pas altérer l’original. Conserver empreinte, version et chaîne de traitement selon les pratiques du cabinet."
+    }
+  ],
+  "pilot": {
+    "title": "Chronologie d’un dossier clos et pseudonymisé",
+    "situation": "La reconstitution manuelle des dates et renvois de pièces est longue et sujette aux oublis dans les dossiers volumineux.",
+    "scope": "Tester sur un dossier clos, pseudonymisé et stocké dans un environnement approuvé ; demander uniquement date, événement, pièce et page, sans analyse juridique.",
+    "measure": "Comparer au tableau humain : événements exacts, événements manqués, faux rapprochements, qualité des renvois, temps de contrôle et incidents d’accès.",
+    "stop": "Arrêter si des pièces sont exposées hors périmètre, si les renvois ne sont pas vérifiables ou si le taux d’erreurs fixé avant le test est dépassé."
+  },
+  "existing_tools_first": [
+    "OCR et recherche plein texte du logiciel documentaire",
+    "Bordereau de pièces et modèles du cabinet",
+    "Tableur pour chronologie, arguments et renvois",
+    "Comparaison de documents et suivi des modifications",
+    "Calendrier procédural du logiciel métier avec double contrôle",
+    "Bases de jurisprudence et sources officielles déjà utilisées par le cabinet"
+  ],
+  "diagnostic_questions": [
+    "Chaque sortie peut-elle être reliée à une pièce et à une page précises ?",
+    "Le dossier peut-il être traité dans cet environnement au regard du secret et des données de tiers ?",
+    "Comment les droits d’accès sont-ils cloisonnés entre équipes et dossiers ?",
+    "Quelle étape impose une vérification dans une source juridique fiable et à jour ?",
+    "Quel système reste maître pour les délais et dépôts ?",
+    "Comment tester les contre-arguments et limiter le biais de confirmation ?",
+    "Qui peut interrompre le traitement en cas d’anomalie ou de fuite ?"
+  ],
+  "related_personas": [
+    "avocat-individuel",
+    "associe-dirigeant",
+    "avocat-collaborateur",
+    "avocat-conseil-transactionnel"
+  ],
+  "sources": [
+    {
+      "title": "Les mentions de spécialisation — CNB",
+      "url": "https://cnb.avocat.fr/les-mentions-de-specialisation",
+      "kind": "role"
+    },
+    {
+      "title": "Guide pratique – La déontologie et l’intelligence artificielle, 1re édition, avril 2026 – Conseil national des barreaux",
+      "url": "https://cnb.avocat.fr/medias/guide-deontologie-ia-6a4cef5ea1d577.28126431.pdf",
+      "kind": "framework"
+    },
+    {
+      "title": "Guide pratique – Utilisation des systèmes d’intelligence artificielle générative, septembre 2024 – Conseil national des barreaux",
+      "url": "https://cnb.avocat.fr/medias/cnb-guidepratique-utilisation-systemes-iag-2024-68f7b1d86e4570.98487114.pdf",
+      "kind": "framework"
+    },
+    {
+      "title": "Règlement intérieur national de la profession d’avocat, version consolidée au 7 juillet 2026 – Conseil national des barreaux",
+      "url": "https://cnb.avocat.fr/medias/file/cnbrinmaj-08072026-6a4e79014f6b41.49207715.pdf",
+      "kind": "role"
+    },
+    {
+      "title": "Comment déployer une IA générative ? La CNIL apporte de premières précisions – CNIL",
+      "url": "https://www.cnil.fr/fr/comment-deployer-une-ia-generative-la-cnil-apporte-de-premieres-precisions",
+      "kind": "framework"
+    },
+    {
+      "title": "Recommandations de sécurité pour un système d’IA générative – ANSSI",
+      "url": "https://messervices.cyber.gouv.fr/documents-guides/Recommandations_de_s%C3%A9curit%C3%A9_pour_un_syst%C3%A8me_d_IA_g%C3%A9n%C3%A9rative.pdf",
+      "kind": "framework"
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "slug": "ressources-humaines-recrutement",
+  "name": "Responsable ressources humaines et recrutement",
+  "seo_title": "IA pour les RH et le recrutement en cabinet d’avocats",
+  "meta_description": "Usages responsables de l’IA pour préparer recrutement et intégration, sans décision automatisée ni surveillance des équipes.",
+  "intro": "Un recrutement se dérègle vite lorsque la fiche de poste, la grille d’entretien et les comptes rendus n’emploient pas les mêmes critères. Les RH doivent aussi gérer des données sensibles, des calendriers serrés et plusieurs populations : avocats, juristes, fonctions support, stagiaires et alternants.\n\nL’IA peut aider à préparer une grille commune ou à extraire d’un CV des éléments explicitement écrits. Elle ne doit pas déduire une personnalité, une origine, un état de santé ou un potentiel supposé. La décision reste prise par des personnes capables d’expliquer les critères utilisés et de contredire l’outil.",
+  "responsibilities": [
+    "Recueillir les besoins et formaliser les profils",
+    "Diffuser les offres et suivre les candidatures",
+    "Coordonner entretiens et décisions",
+    "Gérer intégration et dossiers du personnel",
+    "Suivre compétences et formations",
+    "Outiller les responsables",
+    "Protéger la confidentialité des données RH"
+  ],
+  "frictions": [
+    "Fiches de poste hétérogènes",
+    "Volume de candidatures difficile à traiter",
+    "Critères implicites ou variables",
+    "Comptes rendus d’entretien incomplets",
+    "Données réparties entre courriels et logiciels",
+    "Risque de biais dans le classement"
+  ],
+  "assist": [
+    {
+      "title": "Fiche de poste",
+      "body": "Distinguer missions, compétences nécessaires, critères appréciés et conditions à partir d’un besoin validé."
+    },
+    {
+      "title": "Grille d’entretien",
+      "body": "Proposer des questions communes et critères observables liés au poste."
+    },
+    {
+      "title": "Résumé de candidature",
+      "body": "Extraire uniquement les expériences et compétences présentes dans le CV, avec renvoi à la source."
+    },
+    {
+      "title": "Checklist d’intégration",
+      "body": "Adapter un modèle approuvé pour accès, matériel, formations et points de suivi."
+    },
+    {
+      "title": "Besoins de formation",
+      "body": "Regrouper des demandes déclarées et anonymisées sans noter les personnes."
+    }
+  ],
+  "automate_with_controls": [
+    {
+      "title": "Accusé de réception",
+      "body": "Confirmer la réception d’une candidature.",
+      "control": "Texte validé, information sur les données et aucune promesse sur la suite."
+    },
+    {
+      "title": "Planification",
+      "body": "Proposer des créneaux d’entretien.",
+      "control": "Accès limité aux agendas nécessaires et reprise manuelle possible."
+    },
+    {
+      "title": "Classement documentaire",
+      "body": "Ranger par poste, date et état administratif.",
+      "control": "Aucun score de mérite et règles visibles."
+    },
+    {
+      "title": "Rappels d’intégration",
+      "body": "Notifier les responsables des tâches prévues.",
+      "control": "Checklist approuvée et aucune création automatique de droits élevés."
+    }
+  ],
+  "do_not_automate": [
+    "Rejeter ou sélectionner définitivement un candidat",
+    "Noter personnalité, émotion ou potentiel depuis texte, voix ou vidéo",
+    "Inférer des données sensibles",
+    "Décider rémunération, promotion, sanction ou rupture",
+    "Surveiller courriels, frappes ou conversations",
+    "Réutiliser les CV pour entraîner un outil sans cadre explicite"
+  ],
+  "data_and_risks": [
+    {
+      "title": "Candidatures",
+      "body": "Collecter seulement le nécessaire, informer les candidats et appliquer une conservation définie."
+    },
+    {
+      "title": "Biais",
+      "body": "Tester les critères et résultats, documenter les écarts et permettre la contestation humaine."
+    },
+    {
+      "title": "Transparence",
+      "body": "Expliquer où intervient l’outil, quelles données il traite et qui décide."
+    },
+    {
+      "title": "Confidentialité",
+      "body": "Restreindre l’accès aux candidatures, évaluations, rémunérations et absences."
+    },
+    {
+      "title": "Décision automatisée",
+      "body": "Conserver une intervention humaine réelle, informée et traçable."
+    }
+  ],
+  "pilot": {
+    "title": "Grille d’entretien assistée",
+    "situation": "Les entretiens utilisent des critères variables.",
+    "scope": "Un recrutement support, depuis une fiche validée, sans données candidat lors de la génération et sans score.",
+    "measure": "Couverture des critères, cohérence, questions supprimées et retour des recruteurs.",
+    "stop": "Arrêt si des critères discriminatoires, inférences personnelles ou scores non explicables apparaissent."
+  },
+  "existing_tools_first": [
+    "Utiliser les champs structurés de l’ATS",
+    "Créer une grille commune dans la bureautique",
+    "Configurer conservation et droits du SIRH",
+    "Activer les checklists d’intégration",
+    "Vérifier les services Urssaf disponibles"
+  ],
+  "diagnostic_questions": [
+    "Quels critères sont nécessaires pour le poste ?",
+    "Sont-ils appliqués à tous les candidats comparables ?",
+    "Quelles données sont stockées et supprimées ?",
+    "Le candidat est-il informé de l’usage d’une IA ?",
+    "Qui peut contredire une suggestion ?",
+    "Quels biais seront testés ?"
+  ],
+  "related_personas": [
+    "responsable-administratif-financier",
+    "communication-business-development",
+    "referent-informatique-dsi"
+  ],
+  "sources": [
+    {
+      "title": "Guide du recrutement — CNIL",
+      "url": "https://cnil.fr/fr/le-guide-du-recrutement",
+      "kind": "role"
+    },
+    {
+      "title": "Recrutement et données personnelles dans les TPE-PME — CNIL",
+      "url": "https://www.cnil.fr/fr/recrutement-et-donnees-personnelles-dans-les-tpepme-cinq-questions-incontournables-se-poser",
+      "kind": "role"
+    },
+    {
+      "title": "Règles pour la gestion du personnel — CNIL",
+      "url": "https://www.cnil.fr/fr/les-regles-pour-la-gestion-du-personnel",
+      "kind": "role"
+    },
+    {
+      "title": "Formalités d’embauche — Entreprendre.Service-Public.fr",
+      "url": "https://entreprendre.service-public.fr/vosdroits/F23107",
+      "kind": "role"
+    },
+    {
+      "title": "Plan Impulsion IA 2027 — Anact",
+      "url": "https://www.anact.fr/plan-impulsion-ia-2027-lanact-se-mobilise",
+      "kind": "framework"
+    }
+  ],
+  "role_boundary": "Les RH organisent le processus et documentent les critères. Le responsable opérationnel apprécie les compétences métier ; la direction prend la décision selon les délégations ; le DPO conseille sur les traitements de données. Aucun outil ne doit devenir le décideur de fait."
+}

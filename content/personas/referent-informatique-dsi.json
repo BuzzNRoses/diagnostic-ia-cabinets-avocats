@@ -1,0 +1,171 @@
+{
+  "slug": "referent-informatique-dsi",
+  "name": "Référent informatique ou DSI",
+  "seo_title": "IA pour le référent informatique et la DSI d’un cabinet d’avocats",
+  "meta_description": "Cadre concret pour évaluer et sécuriser les outils d’IA d’un cabinet, avec gouvernance, tests, journalisation et réversibilité.",
+  "intro": "Une démonstration réussie ne dit presque rien sur les conditions d’exploitation. Avant d’ouvrir un outil d’IA aux équipes, le référent informatique ou la DSI doit savoir quelles données circulent, quels comptes y accèdent, où restent les journaux, comment le service est coupé et comment les données sont récupérées.\n\nSon travail consiste à transformer une promesse commerciale en configuration testable. Les essais commencent sur des données fictives et avec des droits limités. La performance du modèle vient ensuite : un service rapide mais impossible à auditer, restaurer ou quitter reste un mauvais choix pour le cabinet.",
+  "responsibilities": [
+    "Inventorier applications, comptes, équipements et fournisseurs",
+    "Gérer identités, habilitations et authentification",
+    "Protéger postes, réseaux, sauvegardes et échanges",
+    "Évaluer solutions et intégrations",
+    "Définir règles d’usage, support et incidents",
+    "Coordonner les prestataires",
+    "Former les utilisateurs et suivre l’adoption"
+  ],
+  "frictions": [
+    "Outils adoptés avant validation",
+    "Visibilité incomplète sur conservation et réutilisation des données",
+    "Contrats et paramètres difficiles à comparer",
+    "Comptes et connecteurs non inventoriés",
+    "Pression pour tester sur des dossiers réels",
+    "Peu de temps pour les scénarios d’incident",
+    "Confusion entre démonstration et production"
+  ],
+  "assist": [
+    {
+      "title": "Grille fournisseur",
+      "body": "Structurer les questions sur hébergement, sous-traitants, conservation, entraînement, chiffrement, journaux et réversibilité."
+    },
+    {
+      "title": "Comparaison de configurations",
+      "body": "Résumer les écarts entre paramètres documentés avec renvoi aux sources."
+    },
+    {
+      "title": "Supports utilisateurs",
+      "body": "Transformer une procédure approuvée en fiche courte ou FAQ sans modifier les règles."
+    },
+    {
+      "title": "Scénarios de test",
+      "body": "Préparer des cas normaux, erreurs, divulgation et indisponibilité avec données fictives."
+    },
+    {
+      "title": "Demandes de support",
+      "body": "Suggérer catégorie et priorité sans exposer les dossiers ni fermer automatiquement un ticket."
+    }
+  ],
+  "automate_with_controls": [
+    {
+      "title": "Inventaire des comptes",
+      "body": "Collecter les métadonnées nécessaires aux comptes orphelins.",
+      "control": "Lecture seule et revue humaine avant suspension."
+    },
+    {
+      "title": "Alertes de configuration",
+      "body": "Détecter un écart à une référence approuvée.",
+      "control": "Règle versionnée et aucune correction automatique critique."
+    },
+    {
+      "title": "Support de niveau 1",
+      "body": "Préparer une réponse depuis une base validée.",
+      "control": "Sources affichées, périmètre limité et escalade facile."
+    },
+    {
+      "title": "Tests de restauration",
+      "body": "Planifier les exercices et collecter les résultats.",
+      "control": "Environnement de test, compte rendu et suivi des échecs."
+    },
+    {
+      "title": "Registre des usages IA",
+      "body": "Consolider outils, versions, finalités, responsables et incidents.",
+      "control": "Journaux minimisés, conservation définie et pas de contenu confidentiel inutile."
+    }
+  ],
+  "do_not_automate": [
+    "Accorder des droits élevés ou ouvrir un connecteur sans approbation",
+    "Déployer directement sur des dossiers réels",
+    "Laisser un agent exécuter librement commandes, messages ou suppressions",
+    "Clore seul un incident de sécurité",
+    "Copier journaux ou pièces sensibles vers un service non approuvé",
+    "Accepter les déclarations fournisseur sans preuve contractuelle et technique"
+  ],
+  "data_and_risks": [
+    {
+      "title": "Flux de données",
+      "body": "Cartographier entrées, sorties, journaux, sauvegardes, sous-traitants et transferts."
+    },
+    {
+      "title": "Entraînement",
+      "body": "Vérifier contrat et paramètres effectifs ; désactiver toute réutilisation incompatible."
+    },
+    {
+      "title": "Accès",
+      "body": "Appliquer moindre privilège, MFA, comptes nominatifs et revues régulières."
+    },
+    {
+      "title": "Injection et sorties",
+      "body": "Traiter les contenus externes comme non fiables, limiter les outils et confirmer toute action."
+    },
+    {
+      "title": "Réversibilité",
+      "body": "Prévoir export, suppression, restauration et solution de repli."
+    }
+  ],
+  "pilot": {
+    "title": "Assistant de support interne",
+    "situation": "Les mêmes questions techniques reviennent et les réponses sont dispersées.",
+    "scope": "Groupe restreint, documents non confidentiels, aucune connexion aux dossiers ni capacité d’action.",
+    "measure": "Réponses sourcées et correctes, escalades, temps de résolution et incidents de divulgation.",
+    "stop": "Arrêt si une réponse est non sourcée, hors habilitation, hors périmètre ou sans utilité mesurable."
+  },
+  "existing_tools_first": [
+    "Activer MFA et politiques d’accès existantes",
+    "Utiliser inventaires, journaux et alertes déjà disponibles",
+    "Tester sauvegardes et restaurations",
+    "Centraliser les procédures validées",
+    "Réduire comptes partagés et droits inutiles",
+    "Vérifier les fonctions IA déjà intégrées et leurs paramètres"
+  ],
+  "diagnostic_questions": [
+    "Quelles données entrent, où vont-elles et combien de temps restent-elles ?",
+    "Le fournisseur réutilise-t-il requêtes, fichiers ou sorties ?",
+    "Quels sous-traitants et régions sont impliqués ?",
+    "Quelles actions et quels privilèges sont possibles ?",
+    "Comment tester confidentialité, restauration et réversibilité ?",
+    "Qui approuve, surveille et peut couper le service ?",
+    "Une fonction existante répond-elle au besoin avec moins de risques ?"
+  ],
+  "related_personas": [
+    "responsable-administratif-financier",
+    "ressources-humaines-recrutement",
+    "communication-business-development"
+  ],
+  "sources": [
+    {
+      "title": "Apec — Directeur des systèmes d’information",
+      "url": "https://www.apec.fr/tous-nos-metiers/informatique/directeur-des-systemes-dinformation.html",
+      "kind": "role"
+    },
+    {
+      "title": "Guide d’hygiène informatique — ANSSI",
+      "url": "https://cyber.gouv.fr/publications/guide-dhygiene-informatique",
+      "kind": "role"
+    },
+    {
+      "title": "Cybersécurité pour les TPE-PME en treize questions — ANSSI",
+      "url": "https://messervices.cyber.gouv.fr/documents-guides/20241212%5Fnp%5Fanssi%5Fguide%5Ftpe-pme%5Fv2.pdf",
+      "kind": "role"
+    },
+    {
+      "title": "Sauvegarde des systèmes d’information — ANSSI",
+      "url": "https://messervices.cyber.gouv.fr/guides/fondamentaux-sauvegarde-systemes-dinformation",
+      "kind": "role"
+    },
+    {
+      "title": "Sécurité du cloud — CNIL",
+      "url": "https://www.cnil.fr/fr/securite-cloud-informatique-en-nuage",
+      "kind": "role"
+    },
+    {
+      "title": "Travailler avec un sous-traitant — CNIL",
+      "url": "https://www.cnil.fr/fr/sous-traitant",
+      "kind": "role"
+    },
+    {
+      "title": "Guide pratique sur l’IA générative — CNB",
+      "url": "https://cnb.avocat.fr/medias/cnb-guidepratique-utilisation-systemes-iag-2024-68f7b1d86e4570.98487114.pdf",
+      "kind": "framework"
+    }
+  ],
+  "role_boundary": "L’informatique évalue l’architecture, configure les accès, exploite le service et peut le suspendre en cas d’incident. La direction autorise le déploiement et accepte le risque ; le DPO conseille et contrôle les aspects liés aux données personnelles ; les métiers restent responsables de la qualité de leurs productions."
+}

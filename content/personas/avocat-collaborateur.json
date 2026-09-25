@@ -1,0 +1,157 @@
+{
+  "slug": "avocat-collaborateur",
+  "name": "Avocat collaborateur",
+  "seo_title": "IA pour avocat collaborateur : usages et garde-fous",
+  "meta_description": "Usages prudents de l’IA pour préparer, relire et organiser le travail d’un avocat collaborateur sans déléguer l’analyse juridique.",
+  "intro": "L’avocat collaborateur travaille souvent sur plusieurs dossiers, avec des formats et niveaux d’urgence différents. L’IA peut l’aider à préparer le terrain : ordonner des pièces déjà sélectionnées, comparer des versions, dégager des questions ou améliorer un brouillon, tout en laissant au collaborateur la recherche dans les sources autorisées et le raisonnement juridique.\n\nLe risque principal est un contrôle trop tardif, lorsque le texte généré paraît déjà abouti. Un usage formateur rend au contraire visibles les sources, les hypothèses et les corrections ; il s’inscrit dans les méthodes du cabinet et ne contourne ni la supervision, ni les règles de confidentialité, ni le temps nécessaire pour comprendre le dossier.",
+  "responsibilities": [
+    "Prendre connaissance des faits, pièces et objectifs du dossier",
+    "Effectuer les recherches demandées dans des sources juridiques fiables",
+    "Préparer notes, projets d’actes, contrats, consultations ou écritures",
+    "Tenir les listes d’actions, échéances et demandes de pièces",
+    "Participer aux réunions, appels et échanges avec le client selon le cadre fixé",
+    "Intégrer les retours de l’associé et améliorer les versions successives",
+    "Développer son autonomie, sa méthode et sa maîtrise du domaine traité"
+  ],
+  "frictions": [
+    "Temps important consacré à comprendre des dossiers volumineux ou repris en cours",
+    "Consignes réparties entre courriels, annotations, réunions et messages",
+    "Multiplication des versions et difficulté à identifier les changements substantiels",
+    "Tâches de mise en forme qui interrompent l’analyse",
+    "Pression temporelle favorisant une confiance excessive dans un texte plausible",
+    "Hésitation sur les outils autorisés et les données qui peuvent y être saisies",
+    "Retours de supervision parfois difficiles à transformer en méthode réutilisable"
+  ],
+  "assist": [
+    {
+      "title": "Préparer une prise en main",
+      "body": "À partir de documents autorisés, proposer une chronologie provisoire, une liste d’acteurs et des points à confirmer. Le collaborateur vérifie chaque élément dans les pièces."
+    },
+    {
+      "title": "Comparer des versions",
+      "body": "Résumer les écarts entre deux projets et distinguer modifications rédactionnelles, changements d’obligation et éléments à soumettre au superviseur."
+    },
+    {
+      "title": "Questionner un raisonnement",
+      "body": "Faire apparaître hypothèses, faits manquants, contre-arguments possibles et termes ambigus dans une analyse déjà engagée, sans remplacer la recherche ni la conclusion du collaborateur."
+    },
+    {
+      "title": "Améliorer un premier jet",
+      "body": "Travailler la clarté, la structure et le ton d’un brouillon en conservant une version comparative pour que chaque modification puisse être acceptée ou refusée."
+    },
+    {
+      "title": "Capitaliser les retours",
+      "body": "Transformer des commentaires anonymisés et validés en checklist personnelle ou en exemple de bonne pratique, sans intégrer de contenu dossier dans un service non approuvé."
+    }
+  ],
+  "automate_with_controls": [
+    {
+      "title": "Extraction des actions d’un compte rendu",
+      "body": "Proposer une liste de tâches, responsables pressentis et dates mentionnées dans un compte rendu validé.",
+      "control": "Confirmation de chaque tâche et de chaque date par le collaborateur ; aucune création automatique d’échéance procédurale."
+    },
+    {
+      "title": "Contrôle formel d’un document",
+      "body": "Signaler incohérences de numérotation, termes définis mais inutilisés, renvois incomplets et variations de dénomination.",
+      "control": "Liste de suggestions seulement ; conservation du document original et revue intégrale avant validation."
+    },
+    {
+      "title": "Préparation d’un tableau de pièces",
+      "body": "Extraire titre, date, auteur apparent et pagination de documents déjà autorisés.",
+      "control": "Vérification par sondage puis contrôle des pièces critiques ; accès limité au dossier et absence de conclusion sur la valeur probante."
+    },
+    {
+      "title": "Mise en forme des références",
+      "body": "Harmoniser la présentation d’une liste de références déjà sélectionnées.",
+      "control": "Vérification manuelle de l’existence, de la version, de la juridiction et de la portée de chaque source dans une base fiable."
+    }
+  ],
+  "do_not_automate": [
+    "La recherche juridique autonome présentée comme exhaustive",
+    "La qualification des faits ou la conclusion juridique remise au superviseur sans contrôle des sources",
+    "La réponse directe au client à partir d’un texte généré",
+    "Le dépôt, l’envoi ou la signature d’un document",
+    "La création ou la modification d’une échéance procédurale sans validation",
+    "L’évaluation de la crédibilité d’une personne ou de la stratégie à adopter"
+  ],
+  "data_and_risks": [
+    {
+      "title": "Copie réflexe",
+      "body": "Coller un courriel, une pièce ou une consigne dans un outil non approuvé peut exposer le secret professionnel. Commencer par déterminer si l’outil et le contenu sont autorisés."
+    },
+    {
+      "title": "Hallucination de sources",
+      "body": "Une référence peut être inventée ou correctement citée mais mal résumée. Le contrôle porte sur l’existence, le texte applicable et la pertinence pour le dossier."
+    },
+    {
+      "title": "Biais d’ancrage",
+      "body": "Un premier texte fluide peut enfermer l’analyse. Il est utile de formuler sa propre question, ses hypothèses et son plan avant de solliciter une assistance."
+    },
+    {
+      "title": "Traçabilité de la supervision",
+      "body": "Le cabinet doit pouvoir distinguer la version générée, les modifications du collaborateur et la validation du superviseur, notamment pour les documents à enjeu."
+    }
+  ],
+  "pilot": {
+    "title": "Contrôle formel de projets déjà rédigés",
+    "situation": "Les dernières relectures comportent des vérifications répétitives de renvois, définitions, noms et numérotation.",
+    "scope": "Tester pendant un mois sur des documents pseudonymisés dans un environnement approuvé, après rédaction juridique par le collaborateur et avant relecture finale humaine.",
+    "measure": "Relever les anomalies utiles détectées, les faux positifs, le temps de vérification, les modifications rejetées et les écarts que l’outil n’a pas vus.",
+    "stop": "Arrêter si le traitement exige des données non autorisées, si les faux positifs détournent l’attention ou si l’équipe commence à réduire la relecture intégrale."
+  },
+  "existing_tools_first": [
+    "Comparaison et suivi des modifications du traitement de texte",
+    "Styles, modèles et blocs de texte approuvés",
+    "Recherche plein texte dans le dossier et le système documentaire",
+    "Fonctions de table des matières, renvois et numérotation automatiques",
+    "Gestionnaire de tâches partagé avec responsables et dates",
+    "Bases juridiques et signets documentaires déjà souscrits par le cabinet"
+  ],
+  "diagnostic_questions": [
+    "À quel moment du travail l’assistance est-elle utile sans orienter prématurément l’analyse ?",
+    "Le corpus envoyé est-il autorisé, minimisé et correctement habilité ?",
+    "Quelle vérification source par source sera réalisée ?",
+    "Le superviseur sait-il comment l’outil a été utilisé ?",
+    "Peut-on comparer clairement la sortie, les modifications et la version finale ?",
+    "L’usage renforce-t-il la méthode du collaborateur ou masque-t-il une lacune de compréhension ?",
+    "Quel incident doit être signalé et à qui ?"
+  ],
+  "related_personas": [
+    "associe-dirigeant",
+    "avocat-individuel",
+    "avocat-contentieux",
+    "avocat-conseil-transactionnel"
+  ],
+  "sources": [
+    {
+      "title": "Service Public — Contrat de collaboration libérale",
+      "url": "https://entreprendre.service-public.fr/vosdroits/F31412",
+      "kind": "role"
+    },
+    {
+      "title": "Guide pratique – La déontologie et l’intelligence artificielle, 1re édition, avril 2026 – Conseil national des barreaux",
+      "url": "https://cnb.avocat.fr/medias/guide-deontologie-ia-6a4cef5ea1d577.28126431.pdf",
+      "kind": "framework"
+    },
+    {
+      "title": "Guide pratique – Utilisation des systèmes d’intelligence artificielle générative, septembre 2024 – Conseil national des barreaux",
+      "url": "https://cnb.avocat.fr/medias/cnb-guidepratique-utilisation-systemes-iag-2024-68f7b1d86e4570.98487114.pdf",
+      "kind": "framework"
+    },
+    {
+      "title": "Règlement intérieur national de la profession d’avocat, version consolidée au 7 juillet 2026 – Conseil national des barreaux",
+      "url": "https://cnb.avocat.fr/medias/file/cnbrinmaj-08072026-6a4e79014f6b41.49207715.pdf",
+      "kind": "role"
+    },
+    {
+      "title": "Comment déployer une IA générative ? La CNIL apporte de premières précisions – CNIL",
+      "url": "https://www.cnil.fr/fr/comment-deployer-une-ia-generative-la-cnil-apporte-de-premieres-precisions",
+      "kind": "framework"
+    },
+    {
+      "title": "Recommandations de sécurité pour un système d’IA générative – ANSSI",
+      "url": "https://messervices.cyber.gouv.fr/documents-guides/Recommandations_de_s%C3%A9curit%C3%A9_pour_un_syst%C3%A8me_d_IA_g%C3%A9n%C3%A9rative.pdf",
+      "kind": "framework"
+    }
+  ]
+}

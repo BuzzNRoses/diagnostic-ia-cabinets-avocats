@@ -1,0 +1,158 @@
+{
+  "slug": "communication-business-development",
+  "name": "Responsable communication et business development",
+  "seo_title": "IA pour la communication et le développement d’un cabinet",
+  "meta_description": "Usages maîtrisés de l’IA pour préparer contenus et suivi commercial, dans le respect de la déontologie, du RGPD et du secret.",
+  "intro": "Le contenu le plus difficile à produire n’est pas forcément le plus long. C’est celui qui explique une expertise sans la banaliser, cite une expérience sans révéler une affaire et donne envie de prendre contact sans promettre un résultat. Le responsable communication et business development organise les contributions, les validations, les événements, les annuaires, les propositions et le suivi des contacts.\n\nUne IA peut décliner un article déjà relu ou remettre en forme des notes publiques. Elle ne sait pas si une référence client est publiable, si une formulation respecte la ligne du cabinet ou si un contact peut être sollicité. Ces vérifications précèdent la programmation, l’envoi et la publication.",
+  "responsibilities": [
+    "Tenir le calendrier éditorial",
+    "Coordonner contributions et validations",
+    "Préparer site, newsletters et réseaux sociaux",
+    "Organiser événements et partenariats",
+    "Maintenir expertises, biographies et références publiables",
+    "Suivre contacts et opportunités",
+    "Mesurer les résultats avec proportionnalité"
+  ],
+  "frictions": [
+    "Contributions internes difficiles à obtenir",
+    "Expertise difficile à vulgariser sans l’appauvrir",
+    "Risque de mention client non autorisée",
+    "Contenus génériques sans voix propre",
+    "Données CRM anciennes ou incomplètes",
+    "Multiplication des formats",
+    "Frontière entre information et sollicitation personnalisée"
+  ],
+  "assist": [
+    {
+      "title": "Brouillon sourcé",
+      "body": "Préparer un texte uniquement depuis des notes approuvées et sources publiques identifiées."
+    },
+    {
+      "title": "Déclinaison multiformat",
+      "body": "Transformer un article validé en résumé, invitation ou publication sans ajouter de faits."
+    },
+    {
+      "title": "Contrôle éditorial",
+      "body": "Signaler affirmations non sourcées, superlatifs, ambiguïtés et mentions potentiellement confidentielles."
+    },
+    {
+      "title": "Proposition commerciale",
+      "body": "Assembler une trame depuis des modules, biographies et références approuvés."
+    },
+    {
+      "title": "Synthèse CRM",
+      "body": "Résumer des notes professionnelles factuelles sans profil psychologique ni recommandation juridique."
+    }
+  ],
+  "automate_with_controls": [
+    {
+      "title": "Déclinaison de contenus",
+      "body": "Créer des variantes depuis une source verrouillée.",
+      "control": "Comparaison à la source et validation avant programmation."
+    },
+    {
+      "title": "Veille de mentions publiques",
+      "body": "Regrouper des liens publics sur le cabinet.",
+      "control": "Pas de collecte intrusive et revue humaine avant réaction."
+    },
+    {
+      "title": "Qualification administrative",
+      "body": "Suggérer une catégorie depuis des champs professionnels.",
+      "control": "Critères explicites, correction facile et aucune inférence sensible."
+    },
+    {
+      "title": "Préparation de campagne",
+      "body": "Produire brouillon et checklist.",
+      "control": "Base licite, opposition effective, contrôle déontologique et aucun envoi autonome."
+    }
+  ],
+  "do_not_automate": [
+    "Publier ou envoyer sans validation",
+    "Inventer expertise, résultat, classement, référence ou témoignage",
+    "Utiliser une information de dossier sans autorisation",
+    "Produire une recherche juridique autonome destinée au public",
+    "Aspirer ou enrichir des contacts sans cadre approprié",
+    "Répondre automatiquement à une demande nécessitant analyse juridique ou contrôle de conflit"
+  ],
+  "data_and_risks": [
+    {
+      "title": "Secret et références",
+      "body": "Vérifier autorisation, périmètre et formulation avant toute mention d’une affaire."
+    },
+    {
+      "title": "Exactitude",
+      "body": "Contrôler noms, fonctions, dates, chiffres, citations et liens sur la source primaire."
+    },
+    {
+      "title": "Prospection",
+      "body": "Documenter origine des coordonnées, finalité, ciblage et oppositions."
+    },
+    {
+      "title": "Droits sur les contenus",
+      "body": "Vérifier droits des textes, images, marques et documents utilisés."
+    },
+    {
+      "title": "CRM",
+      "body": "Limiter les notes aux informations professionnelles utiles et factuelles."
+    }
+  ],
+  "pilot": {
+    "title": "Déclinaison d’un article validé",
+    "situation": "Un article relu doit ensuite être adapté à plusieurs canaux.",
+    "scope": "Quatre articles validés, sans donnée client non publique ni génération autonome du fond juridique.",
+    "measure": "Temps, ajouts factuels erronés, corrections de ton, incidents de confidentialité et part conservée.",
+    "stop": "Arrêt si un fait est ajouté, une nuance juridique altérée ou une information non autorisée révélée."
+  },
+  "existing_tools_first": [
+    "Réutiliser les modèles validés",
+    "Configurer les circuits de validation du CMS",
+    "Nettoyer doublons et oppositions du CRM",
+    "Utiliser programmation et statistiques natives",
+    "Tenir une liste de biographies et références publiables"
+  ],
+  "diagnostic_questions": [
+    "Quels contenus partent déjà d’une source stable ?",
+    "Qui valide fond, déontologie et publication ?",
+    "Quelles données ne doivent jamais entrer dans l’outil ?",
+    "Comment sont enregistrées origine et opposition des contacts ?",
+    "Existe-t-il un corpus de formulations approuvées ?",
+    "Comment détecter un ajout ou une déformation ?"
+  ],
+  "related_personas": [
+    "facturation-recouvrement",
+    "ressources-humaines-recrutement",
+    "referent-informatique-dsi"
+  ],
+  "sources": [
+    {
+      "title": "France compétences — Manager de la communication et du marketing",
+      "url": "https://www.francecompetences.fr/recherche/rncp/37766/",
+      "kind": "role"
+    },
+    {
+      "title": "Règlement intérieur national de la profession d’avocat — CNB",
+      "url": "https://cnb.avocat.fr/medias/file/cnbrinmaj-08072026-6a4e79014f6b41.49207715.pdf",
+      "kind": "role"
+    },
+    {
+      "title": "Règles d’or de la prospection électronique — CNIL",
+      "url": "https://www.cnil.fr/fr/les-regles-dor-de-la-prospection-par-courrier-electronique-0",
+      "kind": "role"
+    },
+    {
+      "title": "Communications électroniques aux prospects et clients — CNIL",
+      "url": "https://www.cnil.fr/fr/communication-electronique-quelles-regles",
+      "kind": "role"
+    },
+    {
+      "title": "Guide pratique sur l’IA générative — CNB",
+      "url": "https://cnb.avocat.fr/medias/cnb-guidepratique-utilisation-systemes-iag-2024-68f7b1d86e4570.98487114.pdf",
+      "kind": "framework"
+    },
+    {
+      "title": "Osez l’IA dans votre TPE-PME — France Num",
+      "url": "https://www.francenum.gouv.fr/guides-et-conseils/intelligence-artificielle/comprendre-et-adopter-lia/osez-lia-dans-votre-tpe-pme",
+      "kind": "framework"
+    }
+  ]
+}

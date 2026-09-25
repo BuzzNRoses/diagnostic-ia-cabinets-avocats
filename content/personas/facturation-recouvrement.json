@@ -1,0 +1,151 @@
+{
+  "slug": "facturation-recouvrement",
+  "name": "Responsable facturation et recouvrement",
+  "seo_title": "IA pour la facturation et le recouvrement en cabinet d’avocats",
+  "meta_description": "Usages encadrés de l’IA pour fiabiliser les factures et préparer les relances, avec validation humaine et protection des données.",
+  "intro": "Une facture peut partir en retard pour une raison banale : temps non saisi, modalité oubliée, débours mal rattaché ou validation qui n’arrive pas. Selon le mode d’honoraires retenu, sa préparation peut notamment dépendre des temps enregistrés, d’un forfait, d’un abonnement, d’un échéancier ou d’instructions propres au dossier. Le responsable doit reconstituer une version exacte avant l’envoi, puis suivre le règlement sans confondre oubli, contestation et difficulté réelle.\n\nUn outil peut repérer un champ vide, rapprocher un paiement ou préparer une première relance. Il ne lit pas une convention comme un avocat et ne connaît pas les échanges qui justifient une remise, un avoir ou une suspension. Ces décisions restent humaines et tracées.",
+  "responsibilities": [
+    "Préparer et contrôler les projets de facture",
+    "Vérifier temps, prestations, débours et modalités convenues",
+    "Organiser les circuits de validation",
+    "Émettre, transmettre et archiver les factures",
+    "Suivre échéances, règlements, avoirs et soldes",
+    "Préparer les relances et tracer les contestations"
+  ],
+  "frictions": [
+    "Temps saisis tardivement ou mal libellés",
+    "Modalités dispersées entre plusieurs documents",
+    "Allers-retours avant validation",
+    "Difficulté à distinguer oubli, contestation et impayé",
+    "Relances préparées sans historique lisible",
+    "Informations sensibles dans les libellés"
+  ],
+  "assist": [
+    {
+      "title": "Contrôle des projets",
+      "body": "Repérer champs manquants, doublons et incohérences administratives sans interpréter la convention."
+    },
+    {
+      "title": "Brouillons de relance",
+      "body": "Proposer un message depuis un modèle validé ; une personne vérifie les faits, le ton et l’envoi."
+    },
+    {
+      "title": "Synthèse du compte client",
+      "body": "Présenter factures, règlements, relances et contestations avec liens vers les pièces sources."
+    },
+    {
+      "title": "File de revue",
+      "body": "Regrouper les factures selon ancienneté, montant, absence de contact ou promesse dépassée."
+    },
+    {
+      "title": "Contrôle des libellés",
+      "body": "Signaler les formulations vagues, excessives ou non conformes au style interne sans ajouter d’information."
+    }
+  ],
+  "automate_with_controls": [
+    {
+      "title": "Rappels internes",
+      "body": "Alerter lorsqu’un temps, une pièce ou une validation manque.",
+      "control": "Règles simples et aucune information de fond dans la notification."
+    },
+    {
+      "title": "Relances courantes",
+      "body": "Préparer un brouillon pour des factures répondant à des critères définis.",
+      "control": "Aucun envoi sans validation et exclusion des dossiers contestés ou sensibles."
+    },
+    {
+      "title": "Rapprochement indicatif",
+      "body": "Suggérer une correspondance entre règlement et facture.",
+      "control": "Validation humaine et traitement séparé des cas ambigus."
+    },
+    {
+      "title": "Ancienneté des créances",
+      "body": "Actualiser les catégories et la liste de suivi.",
+      "control": "Source unique, contrôle des totaux et accès restreint."
+    }
+  ],
+  "do_not_automate": [
+    "Émettre une facture sans validation prévue",
+    "Interpréter une convention ou trancher une contestation",
+    "Accorder remise, avoir ou échéancier",
+    "Envoyer une mise en demeure ou engager une procédure",
+    "Classer un client par un score opaque",
+    "Exposer des libellés de dossier dans un outil non approuvé"
+  ],
+  "data_and_risks": [
+    {
+      "title": "Secret dans les libellés",
+      "body": "Une facture peut révéler client, dossier ou stratégie ; limiter l’information et l’environnement utilisé."
+    },
+    {
+      "title": "Exactitude",
+      "body": "Montants et échéances doivent venir du système de référence et être vérifiés."
+    },
+    {
+      "title": "Données d’impayés",
+      "body": "Définir finalité, accès, conservation et règles d’escalade ; éviter les commentaires subjectifs."
+    },
+    {
+      "title": "Profilage",
+      "body": "Préférer des critères simples, auditables et contestables à un score opaque."
+    },
+    {
+      "title": "Preuve",
+      "body": "Conserver facture, version validée du message, date d’envoi et réponse."
+    }
+  ],
+  "pilot": {
+    "title": "Première relance assistée",
+    "situation": "Les premières relances sont répétitives mais doivent rester exactes et adaptées.",
+    "scope": "Six semaines sur des factures échues, non contestées, sous un seuil défini et hors dossiers sensibles.",
+    "measure": "Temps, brouillons validés sans correction factuelle, erreurs détectées et reprises humaines.",
+    "stop": "Arrêt au premier envoi non validé, montant ou destinataire erroné, ou divulgation sensible."
+  },
+  "existing_tools_first": [
+    "Configurer statuts et échéances du logiciel de facturation",
+    "Utiliser le tableau d’ancienneté existant",
+    "Activer les rappels internes",
+    "Normaliser les modèles validés",
+    "Préparer la facturation électronique avec les outils prévus"
+  ],
+  "diagnostic_questions": [
+    "Où les projets de facture restent-ils bloqués ?",
+    "Quelles informations manquent le plus souvent ?",
+    "Quelles relances exigent toujours l’avocat ?",
+    "Comment exclure les dossiers contestés ou sensibles ?",
+    "Quelle application fait foi ?",
+    "Qui valide remise, avoir ou escalade ?"
+  ],
+  "related_personas": [
+    "responsable-administratif-financier",
+    "communication-business-development",
+    "referent-informatique-dsi"
+  ],
+  "sources": [
+    {
+      "title": "Délais de paiement entre professionnels — Entreprendre.Service-Public.fr",
+      "url": "https://entreprendre.service-public.fr/vosdroits/F23211",
+      "kind": "role"
+    },
+    {
+      "title": "Recouvrement amiable — Entreprendre.Service-Public.fr",
+      "url": "https://entreprendre.service-public.fr/vosdroits/F38586",
+      "kind": "role"
+    },
+    {
+      "title": "Gestion commerciale et impayés — CNIL",
+      "url": "https://cnil.fr/fr/gestion-commerciale-et-gestion-des-impayes-la-cnil-publie-deux-nouveaux-referentiels",
+      "kind": "role"
+    },
+    {
+      "title": "Facturation électronique interentreprises — AIFE",
+      "url": "https://aife.economie.gouv.fr/nos-applications/facturation-electronique-b2b",
+      "kind": "role"
+    },
+    {
+      "title": "Guide pratique sur l’IA générative — CNB",
+      "url": "https://cnb.avocat.fr/medias/cnb-guidepratique-utilisation-systemes-iag-2024-68f7b1d86e4570.98487114.pdf",
+      "kind": "framework"
+    }
+  ]
+}

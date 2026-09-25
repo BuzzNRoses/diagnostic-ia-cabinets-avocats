@@ -1,0 +1,167 @@
+{
+  "slug": "associe-dirigeant",
+  "name": "Associé dirigeant",
+  "seo_title": "IA en cabinet d’avocats : priorités de l’associé dirigeant",
+  "meta_description": "Gouverner l’usage de l’IA dans un cabinet d’avocats : choix des cas d’usage, contrôles, confidentialité, formation et pilotage.",
+  "intro": "L’associé dirigeant ne choisit pas seulement un outil : il organise les conditions dans lesquelles le cabinet peut l’utiliser. Il doit arbitrer entre qualité du service, maîtrise des risques, attentes des clients, charge des équipes et cohérence économique, sans transformer une expérimentation en politique implicite.\n\nUne adoption utile commence par quelques usages précis, des responsabilités nommées et des règles compréhensibles. La direction garde la main sur les fournisseurs, les données autorisées, la validation des productions, l’information des équipes et les critères d’arrêt ; elle évite les promesses générales de productivité qui ne seraient pas mesurées dans le cabinet.",
+  "responsibilities": [
+    "Définir la stratégie, le positionnement et les priorités du cabinet",
+    "Garantir la qualité des prestations et le respect des règles professionnelles",
+    "Arbitrer les investissements, fournisseurs et contrats technologiques",
+    "Organiser le travail, les responsabilités et la formation des équipes",
+    "Superviser la gestion des risques, la sécurité et la continuité d’activité",
+    "Piloter la relation avec les clients stratégiques et leurs exigences",
+    "Suivre l’activité économique sans réduire la qualité à des indicateurs de volume"
+  ],
+  "frictions": [
+    "Usages individuels déjà présents mais peu visibles ou hétérogènes",
+    "Difficulté à comparer les offres au-delà des démonstrations commerciales",
+    "Risque de déploiement trop large avant d’avoir défini les cas d’usage",
+    "Manque de temps pour transformer les principes en règles opérationnelles",
+    "Données réparties entre de nombreux logiciels et niveaux d’habilitation",
+    "Crainte des équipes entre surcharge de contrôle et inquiétude sur les métiers",
+    "Absence de mesures communes pour décider de poursuivre, corriger ou arrêter"
+  ],
+  "assist": [
+    {
+      "title": "Cartographier les usages",
+      "body": "Regrouper les tâches proposées par les équipes, les classer par valeur attendue, sensibilité des données, réversibilité et besoin de validation humaine."
+    },
+    {
+      "title": "Préparer une charte interne",
+      "body": "Produire un premier projet de règles à partir des décisions du cabinet : outils autorisés, données interdites, contrôles, signalement des incidents et responsabilités."
+    },
+    {
+      "title": "Comparer les fournisseurs",
+      "body": "Mettre en tableau les réponses contractuelles et techniques sur l’hébergement, la conservation, la réutilisation des données, les accès, la journalisation et la réversibilité."
+    },
+    {
+      "title": "Synthétiser les retours d’expérience",
+      "body": "Rassembler les observations des pilotes en distinguant bénéfices constatés, corrections, usages abandonnés et incidents, sans fabriquer un score global artificiel."
+    },
+    {
+      "title": "Préparer la formation",
+      "body": "Décliner les règles du cabinet en scénarios concrets : bonne minimisation, mauvaise requête, vérification d’une source, escalade et arrêt d’un traitement."
+    }
+  ],
+  "automate_with_controls": [
+    {
+      "title": "Tableau de suivi des pilotes",
+      "body": "Consolider automatiquement des indicateurs déclarés par les responsables de pilote.",
+      "control": "Définitions communes, données agrégées, accès limité et revue humaine avant toute décision de direction."
+    },
+    {
+      "title": "Accueil des nouveaux arrivants",
+      "body": "Proposer un parcours et répondre aux questions sur les procédures internes à partir d’un corpus approuvé.",
+      "control": "Réponses accompagnées de leur source, absence de données dossier, date de mise à jour visible et interlocuteur humain en cas de doute."
+    },
+    {
+      "title": "Classement de la connaissance interne",
+      "body": "Suggérer des mots-clés, thèmes et doublons pour les modèles et notes du cabinet.",
+      "control": "Aucune modification ou suppression automatique ; droits d’accès hérités de la source et validation par le responsable documentaire."
+    },
+    {
+      "title": "Alertes de conformité interne",
+      "body": "Signaler qu’un outil non autorisé ou un champ sensible apparaît dans un processus défini.",
+      "control": "Règles transparentes, journalisation proportionnée, vérification humaine et absence de sanction automatique."
+    }
+  ],
+  "do_not_automate": [
+    "La décision d’autoriser un outil ou un fournisseur pour des données confidentielles",
+    "L’évaluation individuelle, la rémunération, la promotion ou la sanction d’un membre du cabinet",
+    "Les arbitrages de prix, d’honoraires ou de staffing reposant sur une appréciation professionnelle",
+    "La validation finale d’une politique de sécurité, de confidentialité ou de conservation",
+    "L’acceptation d’un risque client ou d’un conflit d’intérêts",
+    "La communication externe sur les capacités du cabinet sans vérification des faits"
+  ],
+  "data_and_risks": [
+    {
+      "title": "Responsabilité de gouvernance",
+      "body": "Une licence achetée ne suffit pas. Il faut définir les usages autorisés et interdits, les rôles de contrôle, la formation, la gestion des incidents et la révision des règles."
+    },
+    {
+      "title": "Prestataires et sous-traitance",
+      "body": "Le cabinet doit comprendre où passent les requêtes, qui peut y accéder, combien de temps elles sont conservées, si elles servent à l’entraînement et comment les données sont restituées ou supprimées."
+    },
+    {
+      "title": "Habilitations",
+      "body": "Un moteur interne ne doit pas permettre à un utilisateur d’obtenir un document auquel il n’avait pas accès dans le système source. Les droits doivent être testés, pas seulement déclarés."
+    },
+    {
+      "title": "Biais managérial",
+      "body": "Les traces d’usage ou scores produits par un outil peuvent être incomplets et ne doivent pas devenir un raccourci pour évaluer la compétence, l’engagement ou la performance."
+    },
+    {
+      "title": "Dépendance fournisseur",
+      "body": "Prévoir export, continuité et sortie du service afin qu’un changement de prix, de modèle ou de conditions ne bloque pas l’activité du cabinet."
+    }
+  ],
+  "pilot": {
+    "title": "Assistant sur les procédures internes du cabinet",
+    "situation": "Les équipes cherchent régulièrement les mêmes procédures administratives, informatiques ou de qualité dans des documents dispersés.",
+    "scope": "Tester pendant six semaines un assistant limité à un corpus non client, validé et daté, auprès d’un petit groupe représentant plusieurs métiers du cabinet.",
+    "measure": "Mesurer les questions résolues avec source correcte, les réponses non trouvées, les corrections, le temps de maintien du corpus, les demandes d’escalade et les incidents d’accès.",
+    "stop": "Suspendre si l’outil révèle un document non autorisé, fournit des réponses sans source, persiste dans des réponses fausses ou impose une maintenance disproportionnée."
+  },
+  "existing_tools_first": [
+    "Intranet ou espace documentaire avec droits d’accès",
+    "Fonctions de recherche du système de gestion documentaire",
+    "Questionnaires et formulaires internes",
+    "Tableaux de bord du logiciel de gestion du cabinet",
+    "Gestionnaire d’identités, groupes et habilitations",
+    "Registre des traitements, procédures sécurité et dispositif de signalement existants"
+  ],
+  "diagnostic_questions": [
+    "Quel problème métier précis le cabinet cherche-t-il à résoudre ?",
+    "Qui porte la décision, qui administre l’outil et qui valide les productions ?",
+    "Quelles catégories de données sont autorisées, interdites ou soumises à accord spécifique ?",
+    "Quelles garanties contractuelles et techniques ont été vérifiées chez le fournisseur ?",
+    "Comment les droits d’accès existants sont-ils conservés dans l’outil d’IA ?",
+    "Quels indicateurs permettront d’arrêter un pilote sans coût de sortie excessif ?",
+    "Comment informer et former les équipes sans présenter l’outil comme infaillible ?"
+  ],
+  "related_personas": [
+    "avocat-individuel",
+    "avocat-collaborateur",
+    "avocat-contentieux",
+    "avocat-conseil-transactionnel"
+  ],
+  "sources": [
+    {
+      "title": "Société d’exercice libéral : ce qu’il faut savoir — Entreprendre.Service-Public.fr",
+      "url": "https://entreprendre.service-public.fr/vosdroits/F38447",
+      "kind": "role"
+    },
+    {
+      "title": "Guide pratique – La déontologie et l’intelligence artificielle, 1re édition, avril 2026 – Conseil national des barreaux",
+      "url": "https://cnb.avocat.fr/medias/guide-deontologie-ia-6a4cef5ea1d577.28126431.pdf",
+      "kind": "framework"
+    },
+    {
+      "title": "IA juridiques : un outil pour vous aider à comparer les solutions – Conseil national des barreaux",
+      "url": "https://cnb.avocat.fr/actualite/ia-juridiques-un-outil-pour-vous-aider-a-comparer-les-solutions",
+      "kind": "role"
+    },
+    {
+      "title": "Comment déployer une IA générative ? La CNIL apporte de premières précisions – CNIL",
+      "url": "https://www.cnil.fr/fr/comment-deployer-une-ia-generative-la-cnil-apporte-de-premieres-precisions",
+      "kind": "framework"
+    },
+    {
+      "title": "Recommandations de sécurité pour un système d’IA générative – ANSSI",
+      "url": "https://messervices.cyber.gouv.fr/documents-guides/Recommandations_de_s%C3%A9curit%C3%A9_pour_un_syst%C3%A8me_d_IA_g%C3%A9n%C3%A9rative.pdf",
+      "kind": "framework"
+    },
+    {
+      "title": "Règlement (UE) 2024/1689 établissant des règles harmonisées concernant l’intelligence artificielle – EUR-Lex",
+      "url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32024R1689",
+      "kind": "framework"
+    },
+    {
+      "title": "Règlement intérieur national de la profession d’avocat, version consolidée au 7 juillet 2026 – Conseil national des barreaux",
+      "url": "https://cnb.avocat.fr/medias/file/cnbrinmaj-08072026-6a4e79014f6b41.49207715.pdf",
+      "kind": "role"
+    }
+  ],
+  "role_boundary": "La direction arbitre le budget, le fournisseur et le niveau de risque accepté. Le DPO conseille et contrôle la protection des données ; l’informatique met en œuvre les mesures techniques ; les avocats responsables des dossiers valident les usages professionnels."
+}

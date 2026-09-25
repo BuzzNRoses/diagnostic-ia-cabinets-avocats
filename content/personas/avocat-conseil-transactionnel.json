@@ -1,0 +1,175 @@
+{
+  "slug": "avocat-conseil-transactionnel",
+  "name": "Avocat conseil transactionnel",
+  "seo_title": "IA et conseil transactionnel : revue, clauses et contrôles",
+  "meta_description": "Usages encadrés de l’IA pour contrats, audits et closing, avec traçabilité des sources, contrôle humain et protection des données.",
+  "intro": "Le conseil transactionnel travaille dans un flux de documents, de versions et de décisions où un détail peut modifier la répartition du risque. L’IA peut aider à comparer, classer et préparer des tableaux de revue, mais elle ne connaît ni l’intention réelle des parties, ni l’économie complète de l’opération, ni le seuil de matérialité retenu par l’avocat.\n\nLa bonne unité de travail est donc une tâche bornée et vérifiable : extraire une clause, rapprocher deux versions, repérer un champ manquant ou alimenter une checklist. Chaque résultat conserve un lien vers le document source ; les arbitrages, conseils, négociations et validations finales restent humains.",
+  "responsibilities": [
+    "Comprendre l’opération, les objectifs du client et la répartition des risques",
+    "Conduire ou coordonner les audits documentaires",
+    "Rédiger, négocier et réviser contrats, annexes et actes connexes",
+    "Tenir les listes de points ouverts, demandes documentaires et décisions",
+    "Coordonner les intervenants et les versions jusqu’au signing et au closing",
+    "Expliquer les options et conséquences au client",
+    "Sécuriser les conditions, signatures, livrables et obligations post-opération"
+  ],
+  "frictions": [
+    "Grand nombre de documents et structures de dossiers variables",
+    "Versions multiples circulant entre plusieurs parties et conseils",
+    "Clauses similaires en apparence mais différentes dans leurs effets",
+    "Informations importantes cachées dans annexes, tableaux ou documents scannés",
+    "Mise à jour manuelle des issues lists et checklists de closing",
+    "Délais courts et dépendances entre équipes, juridictions et spécialistes",
+    "Data rooms contenant des informations stratégiques, personnelles ou couvertes par le secret"
+  ],
+  "assist": [
+    {
+      "title": "Inventorier les documents",
+      "body": "Proposer un classement de data room, relever les fichiers illisibles, doublons apparents et métadonnées manquantes, sans conclure qu’un document absent n’existe pas."
+    },
+    {
+      "title": "Extraire des clauses ciblées",
+      "body": "Repérer dans un corpus autorisé les clauses définies par l’équipe, restituer l’extrait et sa localisation, puis laisser l’avocat apprécier sa portée et sa matérialité."
+    },
+    {
+      "title": "Comparer les versions",
+      "body": "Présenter les modifications textuelles et suggérer les zones susceptibles d’affecter obligations, délais, conditions ou responsabilités pour revue par l’avocat."
+    },
+    {
+      "title": "Préparer une issues list",
+      "body": "Transformer des annotations validées en tableau structuré avec document, clause, question, responsable et statut, sans proposer d’arbitrage final."
+    },
+    {
+      "title": "Rendre un résumé plus accessible",
+      "body": "Préparer une version claire d’un point déjà analysé pour le client ou une équipe non juridique, avec relecture de l’avocat et conservation des réserves."
+    },
+    {
+      "title": "Contrôler la cohérence documentaire",
+      "body": "Relever variations de noms, dates, montants, définitions et renvois entre projets, annexes et checklists."
+    }
+  ],
+  "automate_with_controls": [
+    {
+      "title": "Extraction structurée de clauses",
+      "body": "Alimenter un tableau avec type de clause, extrait, document et page pour un périmètre prédéfini.",
+      "control": "Échantillon de contrôle, revue des documents critiques, affichage de la source et interdiction de déduire une absence à partir d’une non-détection."
+    },
+    {
+      "title": "Comparaison de versions à grande échelle",
+      "body": "Signaler les différences entre une version de référence et les versions reçues.",
+      "control": "Vérifier le bon appariement des fichiers, conserver les originaux et faire qualifier les changements par l’avocat."
+    },
+    {
+      "title": "Mise à jour de checklist",
+      "body": "Proposer un changement de statut lorsqu’un document correspondant est ajouté ou qu’une action est déclarée terminée.",
+      "control": "Aucun statut final de condition satisfaite sans validation du responsable ; historique des changements et pièce justificative obligatoire."
+    },
+    {
+      "title": "Préparation de signatures",
+      "body": "Contrôler la présence apparente de blocs de signature, dates et annexes attendues.",
+      "control": "Vérification humaine de l’identité, des pouvoirs, de la version finale et du dispositif de signature ; aucun envoi automatique."
+    },
+    {
+      "title": "Rappels de points ouverts",
+      "body": "Relancer en interne les responsables d’éléments déjà inscrits dans l’issues list.",
+      "control": "Destinataires et contenu validés, aucune communication externe automatique et possibilité de suspendre les rappels."
+    }
+  ],
+  "do_not_automate": [
+    "L’appréciation de la matérialité d’un risque ou de son acceptabilité pour le client",
+    "La rédaction ou l’acceptation finale d’une clause négociée",
+    "La conclusion qu’un document, passif ou engagement n’existe pas parce qu’il n’a pas été détecté",
+    "Le choix d’une position de négociation ou d’une concession",
+    "La validation d’une condition suspensive, d’un pouvoir ou d’un closing",
+    "Le partage d’un document ou d’une synthèse avec une autre partie sans contrôle humain"
+  ],
+  "data_and_risks": [
+    {
+      "title": "Cloisonnement de la data room",
+      "body": "L’outil ne doit pas élargir les accès. Les groupes, restrictions par dossier et éventuelles clean teams doivent être reproduits et testés."
+    },
+    {
+      "title": "Confidentialité stratégique",
+      "body": "Prix, négociations, secrets d’affaires, données sociales et projets non publics exigent un environnement approuvé, des données minimisées et des garanties de non-réutilisation."
+    },
+    {
+      "title": "Faux négatif",
+      "body": "Une clause non détectée peut se trouver dans une annexe, une image ou une formulation atypique. L’échantillonnage ne remplace pas la revue ciblée des documents critiques."
+    },
+    {
+      "title": "Perte de contexte",
+      "body": "Une extraction isolée peut masquer définitions, exceptions, droit applicable ou documents liés. Le résultat doit permettre de revenir au texte complet."
+    },
+    {
+      "title": "Version erronée",
+      "body": "Une analyse juste sur le mauvais fichier reste inutilisable. Numéro, date, auteur, statut et empreinte de la version doivent être maîtrisés."
+    }
+  ],
+  "pilot": {
+    "title": "Extraction de clauses sur un corpus historique assaini",
+    "situation": "Les revues répétitives de clauses ciblées mobilisent du temps de lecture avant l’analyse de leur portée.",
+    "scope": "Tester sur un corpus clos, pseudonymisé et autorisé, avec trois catégories de clauses précisément définies et restitution obligatoire de l’extrait, du document et de la page.",
+    "measure": "Comparer à une revue humaine de référence : détections correctes, omissions, faux positifs, temps de contrôle, cas ambigus et qualité des renvois.",
+    "stop": "Arrêter si le système mélange les dossiers, perd la traçabilité, dépasse le seuil d’omissions fixé avant le pilote ou incite à réduire la revue des documents critiques."
+  },
+  "existing_tools_first": [
+    "Comparateur de versions et suivi des modifications",
+    "Fonctions de recherche et filtres de la data room",
+    "Tableurs d’audit, issues lists et checklists de closing",
+    "Modèles de contrats, clauses et playbooks validés",
+    "OCR et recherche plein texte du système documentaire",
+    "Plateforme de signature et contrôle de version déjà approuvés"
+  ],
+  "diagnostic_questions": [
+    "Quelles clauses ou informations sont définies assez précisément pour être extraites ?",
+    "L’outil conserve-t-il le lien vers le document complet et la page ?",
+    "Comment sont gérés les droits de data room, clean teams et restrictions client ?",
+    "Quel échantillon humain permettra de mesurer les omissions et faux positifs ?",
+    "Qui qualifie la portée juridique et la matérialité de chaque résultat ?",
+    "Comment empêcher l’analyse d’une mauvaise version ?",
+    "Quelle procédure s’applique aux documents illisibles, atypiques ou non détectés ?"
+  ],
+  "related_personas": [
+    "avocat-individuel",
+    "associe-dirigeant",
+    "avocat-collaborateur",
+    "avocat-contentieux"
+  ],
+  "sources": [
+    {
+      "title": "Les mentions de spécialisation — CNB",
+      "url": "https://cnb.avocat.fr/les-mentions-de-specialisation",
+      "kind": "role"
+    },
+    {
+      "title": "Guide pratique – La déontologie et l’intelligence artificielle, 1re édition, avril 2026 – Conseil national des barreaux",
+      "url": "https://cnb.avocat.fr/medias/guide-deontologie-ia-6a4cef5ea1d577.28126431.pdf",
+      "kind": "framework"
+    },
+    {
+      "title": "Guide pratique – Utilisation des systèmes d’intelligence artificielle générative, septembre 2024 – Conseil national des barreaux",
+      "url": "https://cnb.avocat.fr/medias/cnb-guidepratique-utilisation-systemes-iag-2024-68f7b1d86e4570.98487114.pdf",
+      "kind": "framework"
+    },
+    {
+      "title": "IA juridiques : un outil pour vous aider à comparer les solutions – Conseil national des barreaux",
+      "url": "https://cnb.avocat.fr/actualite/ia-juridiques-un-outil-pour-vous-aider-a-comparer-les-solutions",
+      "kind": "role"
+    },
+    {
+      "title": "Comment déployer une IA générative ? La CNIL apporte de premières précisions – CNIL",
+      "url": "https://www.cnil.fr/fr/comment-deployer-une-ia-generative-la-cnil-apporte-de-premieres-precisions",
+      "kind": "framework"
+    },
+    {
+      "title": "Recommandations de sécurité pour un système d’IA générative – ANSSI",
+      "url": "https://messervices.cyber.gouv.fr/documents-guides/Recommandations_de_s%C3%A9curit%C3%A9_pour_un_syst%C3%A8me_d_IA_g%C3%A9n%C3%A9rative.pdf",
+      "kind": "framework"
+    },
+    {
+      "title": "Règlement intérieur national de la profession d’avocat, version consolidée au 7 juillet 2026 – Conseil national des barreaux",
+      "url": "https://cnb.avocat.fr/medias/file/cnbrinmaj-08072026-6a4e79014f6b41.49207715.pdf",
+      "kind": "role"
+    }
+  ]
+}

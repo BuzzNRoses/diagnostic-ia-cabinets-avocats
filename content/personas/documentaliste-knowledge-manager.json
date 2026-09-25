@@ -1,0 +1,156 @@
+{
+  "slug": "documentaliste-knowledge-manager",
+  "name": "Documentaliste ou knowledge manager",
+  "seo_title": "IA pour documentaliste et knowledge manager juridique",
+  "meta_description": "Usages prudents de l’IA pour la documentation juridique : indexation, capitalisation, veille et bases de connaissances avec sources et validation.",
+  "intro": "Le documentaliste ou knowledge manager organise l’accès aux sources, précédents, modèles et savoirs utiles au cabinet. Il analyse les besoins des utilisateurs, sélectionne les ressources, définit des règles d’indexation, anime la capitalisation et veille à la qualité d’une base documentaire qui doit rester compréhensible et maintenable.\n\nL’IA peut faciliter le préclassement, l’extraction de métadonnées ou la préparation de résumés. Elle ne doit pas décider seule qu’un document est fiable, à jour ou applicable à une affaire. La provenance, la version, les droits d’accès et la validation par un professionnel compétent doivent rester visibles.",
+  "responsibilities": [
+    "Recueillir et analyser les besoins documentaires des équipes.",
+    "Rechercher, sélectionner, acquérir et signaler des sources fiables.",
+    "Cataloguer, indexer, résumer et organiser les ressources.",
+    "Administrer les taxonomies, métadonnées et règles de conservation.",
+    "Concevoir et maintenir des services de veille et de diffusion.",
+    "Animer la capitalisation des modèles, précédents et retours d’expérience.",
+    "Former les utilisateurs à la recherche et à l’évaluation critique de l’information."
+  ],
+  "frictions": [
+    "Documents déposés sans métadonnées, contexte ni responsable identifiable.",
+    "Multiplication de doublons et de versions contradictoires.",
+    "Vocabulaire variable entre équipes, matières et bureaux.",
+    "Difficulté à distinguer un modèle validé d’un simple document de travail.",
+    "Veille abondante mais peu adaptée aux besoins réels des avocats.",
+    "Temps nécessaire pour résumer et signaler chaque nouvelle ressource.",
+    "Connaissances détenues par quelques personnes et rarement formalisées."
+  ],
+  "assist": [
+    {
+      "title": "Proposer des métadonnées",
+      "body": "Suggérer un titre, des mots-clés, une matière, un type de document et des entités mentionnées afin d’accélérer le catalogage."
+    },
+    {
+      "title": "Repérer les documents proches",
+      "body": "Identifier des doublons possibles ou des versions similaires pour préparer un contrôle documentaire, sans supprimer ni désigner automatiquement la version de référence."
+    },
+    {
+      "title": "Préparer un résumé documentaire",
+      "body": "Extraire l’objet, le périmètre, les réserves et les points à vérifier d’un document, avec un lien permanent vers la source."
+    },
+    {
+      "title": "Assister l’entretien de capitalisation",
+      "body": "Transformer des notes validées en fiche de retour d’expérience structurée : contexte, méthode, difficultés et points réutilisables."
+    },
+    {
+      "title": "Tester une taxonomie",
+      "body": "Comparer les termes réellement employés dans un corpus autorisé avec le vocabulaire contrôlé afin de repérer les synonymes ou catégories ambiguës."
+    }
+  ],
+  "automate_with_controls": [
+    {
+      "title": "Préindexation documentaire",
+      "body": "Proposer des métadonnées lors du dépôt d’un document dans un espace de travail.",
+      "control": "Le documentaliste valide les champs structurants ; la provenance, l’auteur, la date, le statut et les droits ne sont pas inventés."
+    },
+    {
+      "title": "Détection de doublons",
+      "body": "Signaler des documents identiques ou fortement similaires dans un périmètre donné.",
+      "control": "Aucune fusion ni suppression automatique ; le propriétaire du fonds confirme la version de référence et les règles de conservation."
+    },
+    {
+      "title": "Bulletin de veille préparatoire",
+      "body": "Regrouper des nouveautés issues d’une liste de sources autorisées et produire un projet de notice.",
+      "control": "Le documentaliste vérifie la source, la date, la portée et le lien ; l’avocat compétent valide toute analyse juridique diffusée."
+    },
+    {
+      "title": "Recherche augmentée dans un corpus interne",
+      "body": "Permettre une recherche en langage naturel avec réponse accompagnée des passages utilisés.",
+      "control": "Respect des habilitations document par document, absence de réponse sans source, journalisation appropriée et possibilité d’ouvrir immédiatement l’original."
+    }
+  ],
+  "do_not_automate": [
+    "La certification qu’une source est à jour, applicable ou juridiquement exacte.",
+    "La sélection autonome d’une stratégie, d’un précédent ou d’un modèle pour un dossier.",
+    "La suppression, la fusion ou le déclassement définitif de documents.",
+    "L’attribution de droits d’accès à partir du seul contenu d’un document.",
+    "La diffusion d’une analyse juridique générée sans validation professionnelle.",
+    "La transformation d’un retour d’expérience en règle générale sans validation des responsables."
+  ],
+  "data_and_risks": [
+    {
+      "title": "Héritage des droits d’accès",
+      "body": "Un moteur de recherche ou un assistant ne doit jamais rendre visible un document auquel l’utilisateur n’avait pas accès dans le système source."
+    },
+    {
+      "title": "Perte de provenance",
+      "body": "Un résumé détaché de sa source peut devenir une pseudo-référence. Le document original, sa date, son auteur et son statut doivent rester accessibles."
+    },
+    {
+      "title": "Pollution de la base",
+      "body": "Des contenus générés non signalés peuvent être réutilisés comme précédents et amplifier une erreur. Leur statut et leur processus de validation doivent être explicites."
+    },
+    {
+      "title": "Obsolescence",
+      "body": "Un contenu correct lors de son dépôt peut ne plus l’être. La gestion documentaire doit prévoir des responsables, des dates de revue et des mécanismes d’archivage."
+    },
+    {
+      "title": "Attaques par le contenu",
+      "body": "Les documents intégrés à un assistant peuvent contenir du texte trompeur ou des instructions parasites. L’ingestion et les sorties doivent être isolées et contrôlées."
+    }
+  ],
+  "pilot": {
+    "title": "Préindexation d’un corpus documentaire limité",
+    "situation": "Un ensemble homogène de documents internes autorisés doit être repris ou enrichi en métadonnées.",
+    "scope": "Tester sur une copie d’un corpus limité la proposition de mots-clés et de types documentaires, sans modifier la base de production.",
+    "measure": "Mesurer le taux de suggestions acceptées, le temps de validation, les catégories erronées, les métadonnées inventées et la cohérence entre documentalistes.",
+    "stop": "Arrêter si les métadonnées fausses sont fréquentes, si les droits ne peuvent pas être garantis, si la correction coûte autant que l’indexation manuelle ou si le corpus ne peut pas être utilisé dans le cadre autorisé."
+  },
+  "existing_tools_first": [
+    "Le plan de classement, la taxonomie et les vocabulaires contrôlés.",
+    "Les métadonnées et workflows du système de gestion documentaire.",
+    "Les opérateurs de recherche et alertes des bases juridiques souscrites.",
+    "Les fonctions de dédoublonnage, versionnage et conservation existantes.",
+    "Les modèles de notices, bulletins de veille et fiches de retour d’expérience.",
+    "Les statistiques de recherche sans résultat et les demandes adressées au service documentation."
+  ],
+  "diagnostic_questions": [
+    "Quel corpus est concerné et qui en est responsable ?",
+    "Les droits d’accès sont-ils suffisamment précis pour être reproduits par le nouvel outil ?",
+    "Quelles métadonnées sont obligatoires et lesquelles peuvent seulement être suggérées ?",
+    "Comment distinguer une source primaire, un commentaire, un modèle et un brouillon ?",
+    "Qui valide la fraîcheur et le statut juridique d’un contenu ?",
+    "Les réponses permettent-elles d’ouvrir les passages sources plutôt que de faire confiance au résumé ?",
+    "Comment retirer, corriger ou archiver un contenu erroné ?"
+  ],
+  "related_personas": [
+    "eleve-avocat-stagiaire",
+    "secretaire-assistant-juridique",
+    "dpo-conformite",
+    "office-manager-assistant-direction"
+  ],
+  "sources": [
+    {
+      "title": "Onisep — Documentaliste",
+      "url": "https://www.onisep.fr/ressources/univers-metier/metiers/documentaliste",
+      "kind": "role"
+    },
+    {
+      "title": "France compétences — Métiers de l’information et des bibliothèques",
+      "url": "https://www.francecompetences.fr/recherche/rncp/36478",
+      "kind": "role"
+    },
+    {
+      "title": "France compétences — Déployer une démarche de knowledge management",
+      "url": "https://www.francecompetences.fr/recherche/rs/6646",
+      "kind": "role"
+    },
+    {
+      "title": "France compétences — Manager de l’information numérique",
+      "url": "https://www.francecompetences.fr/recherche/rncp/42643/",
+      "kind": "role"
+    },
+    {
+      "title": "ANSSI — Recommandations de sécurité pour un système d’IA générative",
+      "url": "https://messervices.cyber.gouv.fr/guides/recommandations-de-securite-pour-un-systeme-dia-generative",
+      "kind": "framework"
+    }
+  ]
+}

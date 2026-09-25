@@ -1,0 +1,157 @@
+{
+  "slug": "avocat-individuel",
+  "name": "Avocat individuel",
+  "seo_title": "IA pour avocat individuel : usages utiles et garde-fous",
+  "meta_description": "Des usages concrets de l’IA pour un avocat exerçant seul, avec validation humaine, secret professionnel et contrôle des données.",
+  "intro": "L’avocat individuel cumule le travail juridique, la relation client et la gestion du cabinet. L’intérêt de l’IA se trouve d’abord dans les tâches préparatoires et administratives qui morcellent la journée : remettre en forme un texte, structurer des notes, préparer une liste d’actions ou produire un premier brouillon à partir d’éléments déjà validés.\n\nL’enjeu n’est pas de déléguer le raisonnement juridique. Sans équipe de contrôle à proximité, il faut au contraire rendre la validation plus visible : outil autorisé, données minimisées, source vérifiée, relecture avant tout usage externe et possibilité de revenir immédiatement au processus manuel.",
+  "responsibilities": [
+    "Accueillir le client, comprendre la demande et vérifier les conditions d’ouverture du dossier",
+    "Analyser les faits et le droit puis définir une stratégie avec le client",
+    "Rédiger consultations, actes, courriers et écritures",
+    "Tenir les échéances, audiences, rendez-vous et relances",
+    "Informer le client et conserver une trace claire des échanges",
+    "Gérer les honoraires, la facturation, les fournisseurs et les obligations du cabinet",
+    "Développer l’activité sans compromettre l’indépendance ni la confidentialité"
+  ],
+  "frictions": [
+    "Passages constants entre production juridique, appels, courriels et administration",
+    "Temps limité pour relire à froid ses propres projets",
+    "Informations dispersées entre messagerie, agenda, dossiers et logiciel métier",
+    "Répétition de courriers, comptes rendus et demandes de pièces",
+    "Difficulté à maintenir des modèles à jour et cohérents",
+    "Absence de second regard immédiat sur une synthèse ou une formulation",
+    "Risque de copier trop d’informations confidentielles dans un outil grand public"
+  ],
+  "assist": [
+    {
+      "title": "Structurer avant de rédiger",
+      "body": "Transformer des notes expurgées en plan, chronologie provisoire ou liste de questions à traiter. L’avocat conserve l’analyse, complète les éléments manquants et décide de la structure finale."
+    },
+    {
+      "title": "Améliorer la forme",
+      "body": "Proposer des corrections de langue, des variantes de ton ou une version plus lisible d’un texte déjà rédigé, sans modifier les positions juridiques sans validation explicite."
+    },
+    {
+      "title": "Préparer les échanges client",
+      "body": "Ébaucher un accusé de réception, une demande de pièces ou un compte rendu à partir de modèles du cabinet et de données minimisées. Aucun envoi n’est effectué sans relecture."
+    },
+    {
+      "title": "Créer des listes de contrôle",
+      "body": "Décliner une procédure interne validée en checklist de rendez-vous, de clôture de dossier ou de préparation documentaire, puis signaler les étapes non renseignées."
+    },
+    {
+      "title": "Réutiliser le savoir du cabinet",
+      "body": "Retrouver un modèle ou une note interne dans un corpus fermé et autorisé, avec affichage du document source plutôt qu’une réponse isolée."
+    }
+  ],
+  "automate_with_controls": [
+    {
+      "title": "Pré-classement des courriels",
+      "body": "Suggérer un dossier, un niveau de priorité et une action à partir de règles simples.",
+      "control": "Aucun déplacement définitif ni réponse automatique ; validation par l’avocat et exclusion des messages sensibles si l’environnement n’est pas approuvé."
+    },
+    {
+      "title": "Brouillons administratifs récurrents",
+      "body": "Préremplir des courriers de transmission, demandes de documents ou rappels à partir de champs structurés.",
+      "control": "Modèles validés, champs obligatoires visibles, contrôle du destinataire et relecture avant envoi."
+    },
+    {
+      "title": "Préparation de facturation",
+      "body": "Regrouper les temps et tâches déjà saisis afin de proposer un projet de libellé ou de relevé d’activité.",
+      "control": "Aucun calcul ou envoi définitif sans contrôle de la convention d’honoraires, des temps, des débours et du destinataire."
+    },
+    {
+      "title": "Rappels de suivi",
+      "body": "Créer des rappels internes à partir d’une liste d’actions validée.",
+      "control": "Les délais procéduraux restent inscrits et contrôlés dans l’outil métier de référence ; l’IA ne constitue jamais l’unique alerte."
+    }
+  ],
+  "do_not_automate": [
+    "La qualification juridique des faits et le conseil final au client",
+    "La recherche juridique autonome ou la citation de jurisprudences non vérifiées dans une base fiable",
+    "La décision d’accepter un dossier ou de conclure à l’absence de conflit d’intérêts",
+    "L’envoi d’un acte, d’une consultation, d’écritures ou d’un message engageant le cabinet",
+    "La fixation finale des honoraires ou l’appréciation de leur adéquation",
+    "Toute action irréversible sur un dossier sans validation humaine"
+  ],
+  "data_and_risks": [
+    {
+      "title": "Secret professionnel",
+      "body": "Le nom du client, les confidences, la stratégie, les pièces et même l’agenda peuvent être couverts. Un service grand public ne doit pas recevoir ces éléments ; la pseudonymisation doit aussi empêcher la réidentification par recoupement."
+    },
+    {
+      "title": "Données personnelles",
+      "body": "Limiter les données à la finalité, documenter le traitement, connaître les durées de conservation et vérifier si le fournisseur réutilise les requêtes ou les réponses."
+    },
+    {
+      "title": "Erreur plausible",
+      "body": "Une réponse bien rédigée peut être fausse, incomplète ou obsolète. Toute affirmation factuelle ou juridique doit être rapprochée d’une source accessible et contrôlée."
+    },
+    {
+      "title": "Dépendance opérationnelle",
+      "body": "Conserver les modèles, dossiers et procédures dans les outils maîtrisés par le cabinet afin de pouvoir travailler si le service d’IA devient indisponible ou change de conditions."
+    }
+  ],
+  "pilot": {
+    "title": "Brouillons de demandes de pièces sans données sensibles",
+    "situation": "Les mêmes catégories de demandes et de relances sont souvent reformulées à partir de zéro.",
+    "scope": "Pendant quatre semaines, utiliser uniquement des modèles validés et des champs génériques pour préparer des brouillons ; exclure les pièces, faits détaillés, noms et données sensibles.",
+    "measure": "Compter le nombre de brouillons utilisés, le temps de reprise déclaré, les corrections nécessaires, les erreurs de destinataire évitées et tout incident de confidentialité.",
+    "stop": "Arrêter immédiatement en cas de donnée confidentielle transmise, de mauvais destinataire suggéré, d’erreurs répétées ou si la relecture coûte autant que la rédaction habituelle."
+  },
+  "existing_tools_first": [
+    "Modèles et champs automatiques du traitement de texte",
+    "Fonctions de recherche, classement et règles de la messagerie",
+    "Agenda avec rappels et catégories",
+    "Logiciel de gestion de cabinet pour dossiers, temps et facturation",
+    "Correcteur orthographique et comparateur de versions",
+    "Checklists enregistrées dans l’outil de notes ou de tâches existant"
+  ],
+  "diagnostic_questions": [
+    "Quelles tâches répétitives occupent réellement plusieurs créneaux chaque semaine ?",
+    "Quels outils actuels couvrent déjà une partie du besoin sans ajouter de fournisseur ?",
+    "Quelles données entreraient dans le système et lesquelles doivent en être exclues ?",
+    "Qui vérifie chaque sortie avant qu’elle ne quitte le cabinet ?",
+    "Quelle source de référence permet de contrôler une affirmation juridique ou factuelle ?",
+    "Comment revenir au processus manuel et récupérer les données ?",
+    "Quel résultat observable justifierait de poursuivre le test ?"
+  ],
+  "related_personas": [
+    "associe-dirigeant",
+    "avocat-collaborateur",
+    "avocat-contentieux",
+    "avocat-conseil-transactionnel"
+  ],
+  "sources": [
+    {
+      "title": "Professions libérales réglementées et non réglementées — Entreprendre.Service-Public.fr",
+      "url": "https://entreprendre.service-public.fr/vosdroits/F23458",
+      "kind": "role"
+    },
+    {
+      "title": "Guide pratique – La déontologie et l’intelligence artificielle, 1re édition, avril 2026 – Conseil national des barreaux",
+      "url": "https://cnb.avocat.fr/medias/guide-deontologie-ia-6a4cef5ea1d577.28126431.pdf",
+      "kind": "framework"
+    },
+    {
+      "title": "Guide pratique – Utilisation des systèmes d’intelligence artificielle générative, septembre 2024 – Conseil national des barreaux",
+      "url": "https://cnb.avocat.fr/medias/cnb-guidepratique-utilisation-systemes-iag-2024-68f7b1d86e4570.98487114.pdf",
+      "kind": "framework"
+    },
+    {
+      "title": "Règlement intérieur national de la profession d’avocat, version consolidée au 7 juillet 2026 – Conseil national des barreaux",
+      "url": "https://cnb.avocat.fr/medias/file/cnbrinmaj-08072026-6a4e79014f6b41.49207715.pdf",
+      "kind": "role"
+    },
+    {
+      "title": "Comment déployer une IA générative ? La CNIL apporte de premières précisions – CNIL",
+      "url": "https://www.cnil.fr/fr/comment-deployer-une-ia-generative-la-cnil-apporte-de-premieres-precisions",
+      "kind": "framework"
+    },
+    {
+      "title": "Recommandations de sécurité pour un système d’IA générative – ANSSI",
+      "url": "https://messervices.cyber.gouv.fr/documents-guides/Recommandations_de_s%C3%A9curit%C3%A9_pour_un_syst%C3%A8me_d_IA_g%C3%A9n%C3%A9rative.pdf",
+      "kind": "framework"
+    }
+  ]
+}

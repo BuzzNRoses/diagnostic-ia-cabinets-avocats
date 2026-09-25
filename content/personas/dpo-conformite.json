@@ -1,0 +1,157 @@
+{
+  "slug": "dpo-conformite",
+  "name": "DPO ou responsable conformité",
+  "seo_title": "DPO et conformité : encadrer l’IA dans un cabinet d’avocats",
+  "meta_description": "Rôle du DPO ou responsable conformité face à l’IA : cartographie, analyses de risques, fournisseurs, droits, contrôles et gouvernance.",
+  "intro": "Le DPO ou responsable conformité conseille le cabinet, contribue à la maîtrise des traitements de données et contrôle l’application du cadre retenu. Il intervient notamment sur les registres, les analyses de risques, l’information des personnes, les contrats, les exercices de droits, les incidents et la sensibilisation des équipes, tout en conservant le positionnement et l’indépendance nécessaires à sa mission.\n\nPour l’IA, son rôle n’est pas de déclarer un outil conforme par principe ni d’assumer seul le projet. Il aide la direction, les métiers, l’informatique et la sécurité à identifier les responsabilités, les données, les finalités et les mesures de contrôle. La décision de déployer et la responsabilité du traitement restent portées par l’organisme compétent.",
+  "responsibilities": [
+    "Informer et conseiller la direction et les collaborateurs sur la protection des données.",
+    "Contrôler le respect du RGPD, des politiques internes et des procédures applicables.",
+    "Contribuer au registre des traitements et à la cartographie des flux de données.",
+    "Conseiller sur les analyses d’impact et en vérifier l’exécution.",
+    "Participer à l’évaluation des fournisseurs, contrats et mesures de sécurité.",
+    "Être un point de contact pour les personnes concernées et, le cas échéant, pour la CNIL.",
+    "Organiser la sensibilisation et rendre compte des risques et actions de conformité."
+  ],
+  "frictions": [
+    "Découvrir des usages d’IA déjà engagés sans information du DPO ou de l’informatique.",
+    "Obtenir une description précise des données envoyées, sorties produites et personnes concernées.",
+    "Comparer des conditions contractuelles et documentations techniques évolutives.",
+    "Distinguer expérimentation, déploiement, développement et ajustement d’un modèle.",
+    "Évaluer un risque lorsque le fournisseur décrit peu ses sous-traitants ou sa conservation.",
+    "Faire appliquer des règles proportionnées sans bloquer les usages à faible risque.",
+    "Maintenir le registre, les décisions et les contrôles lorsque les outils changent rapidement."
+  ],
+  "assist": [
+    {
+      "title": "Préparer une fiche de qualification",
+      "body": "Structurer les réponses du porteur de projet : finalité, utilisateurs, données, fournisseurs, sorties, décisions assistées et durée de conservation."
+    },
+    {
+      "title": "Comparer des documents fournisseurs",
+      "body": "Repérer les différences entre politiques de confidentialité, accords de traitement, annexes de sécurité et conditions d’utilisation, puis dresser la liste des clauses à vérifier."
+    },
+    {
+      "title": "Préparer une cartographie des flux",
+      "body": "Transformer des informations validées en tableau des entrées, destinataires, hébergements, sous-traitants, conservations et retours vers les utilisateurs."
+    },
+    {
+      "title": "Rédiger un projet de règles d’usage",
+      "body": "Préparer une charte distinguant usages permis, interdits et soumis à autorisation, à faire valider par la direction et les fonctions compétentes."
+    },
+    {
+      "title": "Concevoir des scénarios de contrôle",
+      "body": "Proposer des cas de test portant sur les habilitations, la suppression, l’erreur de sortie, la fuite d’une donnée ou le changement de fournisseur."
+    }
+  ],
+  "automate_with_controls": [
+    {
+      "title": "Questionnaire initial de projet",
+      "body": "Adapter un questionnaire standard au type d’usage déclaré et signaler les réponses absentes.",
+      "control": "Le DPO qualifie lui-même le traitement, le rôle des acteurs et la nécessité éventuelle d’une analyse d’impact."
+    },
+    {
+      "title": "Veille réglementaire préparatoire",
+      "body": "Collecter les nouveautés provenant d’une liste d’autorités et préparer un résumé thématique.",
+      "control": "Conserver le lien et la date de chaque source ; le DPO vérifie la portée du texte avant diffusion ou modification d’une politique."
+    },
+    {
+      "title": "Suivi des actions de conformité",
+      "body": "Générer des rappels associés aux responsables, preuves attendues et dates de revue convenues.",
+      "control": "Aucune action n’est déclarée close sur la seule base d’un message automatique ; la preuve est examinée par la personne désignée."
+    },
+    {
+      "title": "Contrôle de cohérence documentaire",
+      "body": "Repérer les divergences entre registre, fiche projet, contrat, politique interne et information des utilisateurs.",
+      "control": "Les écarts sont des alertes, non des conclusions juridiques ; chaque document source est relu avant correction."
+    }
+  ],
+  "do_not_automate": [
+    "La conclusion autonome qu’un traitement ou un système d’IA est conforme.",
+    "La décision de réaliser ou non une analyse d’impact sans examen du contexte.",
+    "La réponse finale à une personne concernée ou à une autorité de contrôle.",
+    "La notification d’une violation de données ou la qualification définitive de sa gravité.",
+    "L’acceptation d’un fournisseur, d’un transfert ou d’une clause contractuelle.",
+    "La surveillance généralisée des salariés au nom de la conformité."
+  ],
+  "data_and_risks": [
+    {
+      "title": "Finalité et minimisation",
+      "body": "Le projet doit partir d’un besoin identifié et limiter les données à ce qui est nécessaire. Une possibilité technique ne constitue pas une finalité suffisamment précise."
+    },
+    {
+      "title": "Rôles et chaîne de sous-traitance",
+      "body": "Il faut déterminer qui décide des finalités et moyens, qui traite les données, quels sous-traitants interviennent et si les données d’usage sont réutilisées."
+    },
+    {
+      "title": "Droits et transparence",
+      "body": "Les personnes doivent recevoir une information adaptée lorsque le traitement le requiert et pouvoir exercer leurs droits. Le cabinet doit savoir retrouver, corriger ou supprimer les données concernées."
+    },
+    {
+      "title": "Sécurité et secret professionnel",
+      "body": "La conformité RGPD ne suffit pas à couvrir les exigences de secret professionnel. Les mesures techniques, contractuelles et organisationnelles doivent être examinées ensemble."
+    },
+    {
+      "title": "Indépendance du DPO",
+      "body": "Le DPO conseille et contrôle mais ne doit pas déterminer lui-même les finalités et moyens du traitement qu’il devra ensuite évaluer, ni être privé des ressources nécessaires."
+    }
+  ],
+  "pilot": {
+    "title": "Qualification de projets d’IA par une fiche commune",
+    "situation": "Les demandes d’outils arrivent sous des formats différents et les informations nécessaires à l’analyse sont recueillies tardivement.",
+    "scope": "Tester une fiche de qualification sur quelques projets nouveaux, sans automatiser l’avis du DPO ni la décision de déploiement.",
+    "measure": "Observer la complétude au premier échange, le nombre d’allers-retours, les risques détectés avant contractualisation et la capacité des métiers à décrire leurs données et contrôles.",
+    "stop": "Arrêter ou revoir la fiche si elle produit une validation de façade, si les équipes contournent le DPO, si des réponses non vérifiées sont reprises comme faits ou si elle alourdit les projets sans améliorer l’analyse."
+  },
+  "existing_tools_first": [
+    "Le registre des traitements et les fiches de qualification existantes.",
+    "La méthode d’analyse d’impact et les outils publiés par la CNIL.",
+    "Les questionnaires fournisseurs, annexes de sécurité et accords de traitement.",
+    "Le registre des incidents, violations et demandes d’exercice de droits.",
+    "La charte informatique, la politique de sécurité et les procédures d’habilitation.",
+    "Le plan de sensibilisation et les supports de formation internes."
+  ],
+  "diagnostic_questions": [
+    "Quelle finalité précise justifie le recours à l’IA ?",
+    "Quelles données entrent dans le système et quelles informations peuvent apparaître en sortie ?",
+    "Qui détermine les finalités et moyens, et quels fournisseurs ou sous-traitants interviennent ?",
+    "Les données sont-elles conservées, réutilisées pour l’amélioration du service ou transférées ?",
+    "Quelles décisions humaines peuvent être influencées par la sortie du système ?",
+    "Comment les droits, l’effacement, la sécurité et les incidents seront-ils gérés concrètement ?",
+    "Quels contrôles, preuves et dates de réévaluation sont prévus après le déploiement ?"
+  ],
+  "related_personas": [
+    "office-manager-assistant-direction",
+    "documentaliste-knowledge-manager",
+    "secretaire-assistant-juridique",
+    "eleve-avocat-stagiaire"
+  ],
+  "sources": [
+    {
+      "title": "CNIL — Le délégué à la protection des données",
+      "url": "https://www.cnil.fr/fr/passer-laction/le-delegue-la-protection-des-donnees-dpo",
+      "kind": "role"
+    },
+    {
+      "title": "CNIL — Devenir délégué à la protection des données",
+      "url": "https://www.cnil.fr/fr/le-delegue-la-protection-des-donnees-dpo/devenir-delegue-la-protection-des-donnees",
+      "kind": "role"
+    },
+    {
+      "title": "CNIL — Le guide du délégué à la protection des données",
+      "url": "https://www.cnil.fr/fr/le-guide-du-delegue-la-protection-des-donnees",
+      "kind": "role"
+    },
+    {
+      "title": "CNIL — Questions-réponses sur l’utilisation d’un système d’IA générative",
+      "url": "https://cnil.fr/fr/les-questions-reponses-de-la-cnil-sur-lutilisation-dun-systeme-dia-generative",
+      "kind": "framework"
+    },
+    {
+      "title": "EUR-Lex — Règlement européen sur l’intelligence artificielle",
+      "url": "https://eur-lex.europa.eu/legal-content/fr/ALL/?uri=CELEX%3A32024R1689",
+      "kind": "framework"
+    }
+  ],
+  "role_boundary": "Le DPO conseille, contrôle et alerte. Il ne décide pas seul des finalités et des moyens du traitement : cette responsabilité appartient au responsable de traitement, généralement représenté par la direction du cabinet. L’informatique reste responsable de la mise en œuvre technique des mesures décidées."
+}

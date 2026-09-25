@@ -1,0 +1,151 @@
+{
+  "slug": "responsable-administratif-financier",
+  "name": "Responsable administratif et financier",
+  "seo_title": "IA pour la gestion financière d’un cabinet d’avocats",
+  "meta_description": "Usages prudents de l’IA pour préparer le reporting et fluidifier l’administration d’un cabinet, sans déléguer les décisions financières.",
+  "intro": "À la veille d’une clôture, le problème n’est pas toujours le calcul. Il faut souvent retrouver l’origine d’un chiffre, comprendre pourquoi deux exports ne se recoupent pas et présenter aux associés une situation qu’ils peuvent vérifier. Le responsable administratif et financier relie l’activité, la trésorerie, les achats, la paie et les contrats fournisseurs, avec un périmètre qui varie selon la taille du cabinet.\n\nL’IA est surtout utile en préparation : signaler une anomalie, remettre des données dans un format commun ou proposer un premier commentaire à partir d’un tableau contrôlé. Elle n’approuve ni paiement, ni écriture, ni budget. Si le chiffre ne revient pas à sa source, la synthèse n’est pas exploitable.",
+  "responsibilities": [
+    "Préparer budgets, trésorerie et tableaux de bord",
+    "Coordonner facturation, encaissements et échanges avec l’expert-comptable",
+    "Suivre achats, abonnements, contrats et échéances",
+    "Contrôler la cohérence des données administratives et financières",
+    "Organiser paie et déclarations avec les prestataires compétents",
+    "Présenter aux associés des indicateurs documentés"
+  ],
+  "frictions": [
+    "Données dispersées entre plusieurs applications",
+    "Catégories et libellés utilisés de façon inégale",
+    "Clôtures préparées dans l’urgence",
+    "Rapprochements manuels d’exports",
+    "Origine de certains chiffres difficile à retracer",
+    "Abonnements et renouvellements peu visibles"
+  ],
+  "assist": [
+    {
+      "title": "Commentaire de gestion",
+      "body": "Proposer une première lecture des variations à partir d’un tableau déjà validé et minimisé, avec renvoi aux lignes sources."
+    },
+    {
+      "title": "Contrôle d’export",
+      "body": "Signaler doublons, cellules vides, formats incohérents et variations inhabituelles sans corriger silencieusement la source."
+    },
+    {
+      "title": "Procédures internes",
+      "body": "Transformer des notes approuvées en checklist de clôture, d’achat ou d’arrivée fournisseur."
+    },
+    {
+      "title": "Comparaison fournisseur",
+      "body": "Extraire dates, montants, renouvellements et niveaux de service dans une grille, sans choisir à la place du décideur."
+    },
+    {
+      "title": "Scénarios chiffrés",
+      "body": "Mettre en forme les hypothèses fournies par le RAF et rappeler qu’une simulation n’est pas une prévision garantie."
+    }
+  ],
+  "automate_with_controls": [
+    {
+      "title": "Collecte d’indicateurs",
+      "body": "Importer des champs définis vers un tableau de préparation.",
+      "control": "Connecteurs en lecture seule, journal des imports et contrôle des totaux."
+    },
+    {
+      "title": "Alertes d’échéance",
+      "body": "Notifier avant un renouvellement ou une clôture.",
+      "control": "Calendrier de référence tenu par un humain et aucun envoi externe automatique."
+    },
+    {
+      "title": "Préclassement des dépenses",
+      "body": "Suggérer une catégorie analytique.",
+      "control": "Suggestion visible, validation ligne par ligne et aucune écriture comptable directe."
+    },
+    {
+      "title": "Détection d’écarts",
+      "body": "Comparer les valeurs à des seuils documentés.",
+      "control": "Explication de l’alerte et revue humaine avant action."
+    }
+  ],
+  "do_not_automate": [
+    "Déclencher ou approuver un paiement",
+    "Valider une écriture, une paie ou une déclaration",
+    "Décider seul d’un budget ou d’un investissement",
+    "Interpréter juridiquement ou fiscalement une situation",
+    "Transmettre des données bancaires, salariales ou client à un service non autorisé"
+  ],
+  "data_and_risks": [
+    {
+      "title": "Données financières",
+      "body": "Minimiser les champs, masquer les coordonnées bancaires et limiter les habilitations."
+    },
+    {
+      "title": "Données salariales",
+      "body": "Restreindre les accès et encadrer contractuellement l’outil et la conservation."
+    },
+    {
+      "title": "Secret professionnel",
+      "body": "Un libellé ou un axe analytique peut révéler un client ou un dossier ; utiliser des identifiants neutres."
+    },
+    {
+      "title": "Traçabilité",
+      "body": "Conserver source, date d’extraction, règle de calcul et version du livrable."
+    },
+    {
+      "title": "Dépendance fournisseur",
+      "body": "Vérifier réversibilité, sous-traitants, entraînement éventuel et suppression des données."
+    }
+  ],
+  "pilot": {
+    "title": "Commentaire mensuel assisté",
+    "situation": "Le reporting est contrôlé mais sa mise en récit reste répétitive.",
+    "scope": "Tester sur trois clôtures avec un export sans noms de clients, données bancaires ni données salariales.",
+    "measure": "Temps de préparation, corrections factuelles, part conservée et traçabilité des chiffres.",
+    "stop": "Arrêt si une donnée est inventée, si la source est introuvable ou si les corrections annulent l’utilité."
+  },
+  "existing_tools_first": [
+    "Exploiter les tableaux de bord du logiciel métier",
+    "Activer les contrôles du logiciel comptable",
+    "Utiliser les alertes du calendrier partagé",
+    "Normaliser les catégories et modèles de tableur",
+    "Interroger l’expert-comptable sur les fonctions déjà disponibles"
+  ],
+  "diagnostic_questions": [
+    "Quel reporting mobilise le plus de préparation manuelle ?",
+    "Chaque chiffre peut-il être relié à sa source ?",
+    "Quelles données sont exportées et par qui ?",
+    "Quelles anomalies reviennent à chaque clôture ?",
+    "Quels contrôles doivent rester signés par une personne ?",
+    "Quelles fonctions des outils actuels sont sous-utilisées ?"
+  ],
+  "related_personas": [
+    "facturation-recouvrement",
+    "ressources-humaines-recrutement",
+    "referent-informatique-dsi"
+  ],
+  "sources": [
+    {
+      "title": "France compétences — Responsable administratif et financier",
+      "url": "https://www.francecompetences.fr/recherche/rncp/37836/",
+      "kind": "role"
+    },
+    {
+      "title": "Tout savoir sur la facturation — Entreprendre.Service-Public.fr",
+      "url": "https://entreprendre.service-public.fr/vosdroits/F23208",
+      "kind": "role"
+    },
+    {
+      "title": "IA et RGPD : recommandations — CNIL",
+      "url": "https://cnil.fr/fr/ia-et-rgpd-la-cnil-publie-ses-nouvelles-recommandations-pour-accompagner-une-innovation-responsable",
+      "kind": "framework"
+    },
+    {
+      "title": "Guide de la sécurité des données personnelles — CNIL",
+      "url": "https://www.cnil.fr/fr/guide-de-la-securite-des-donnees-personnelles-nouvelle-edition-2024",
+      "kind": "role"
+    },
+    {
+      "title": "Guide pratique sur l’IA générative — CNB",
+      "url": "https://cnb.avocat.fr/medias/cnb-guidepratique-utilisation-systemes-iag-2024-68f7b1d86e4570.98487114.pdf",
+      "kind": "framework"
+    }
+  ],
+  "role_boundary": "Le RAF fiabilise les données et prépare les arbitrages. La direction approuve les budgets et paiements selon les délégations ; l’expert-comptable et les conseils compétents conservent leurs missions ; les RH valident les décisions individuelles concernant la rémunération et le personnel."
+}
